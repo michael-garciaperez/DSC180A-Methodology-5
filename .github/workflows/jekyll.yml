@@ -29,10 +29,10 @@ jobs:
           bundler-cache: true
 
       - name: Install Bundler
-        run: gem install bundler -v '2.3.7'
-
-      - name: Install Dependencies
-        run: bundle install --path vendor/bundle
+        run: |
+          gem install bundler -v '2.3.7'
+          bundle config set --local path 'vendor/bundle'
+          bundle install
 
       - name: Setup Pages
         id: pages
@@ -63,3 +63,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
+
