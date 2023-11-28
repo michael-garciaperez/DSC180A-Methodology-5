@@ -4,3 +4,4 @@ source: .
 destination: _site
 url: "https://michael-garciaperez.github.io"
 baseurl: "/DSC180A-Methodology-5"
+theme: jekyll-theme-cayman
