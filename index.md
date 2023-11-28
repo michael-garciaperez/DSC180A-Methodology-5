@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Capstone Domain: TBD"
+---
+
 # Michael Garcia-Perez (mig009@ucsd.edu)
 ## Ethical Considerations in Using Artificial Intelligence (A10), Dr. Rasmus Nielsen
 
