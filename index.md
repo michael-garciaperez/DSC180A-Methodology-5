@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Capstone Domain: Addressing Popularity Bias for Recommender Systems"
-## Authors: Michael Garcia-Perez (mig009@ucsd.edu), Christine Deng (cydeng@ucsd.edu)
+title: "Addressing Popularity Bias for Recommender Systems"
 ---
 
-# Michael Garcia-Perez (mig009@ucsd.edu), Christine Deng (cydeng@ucsd.edu)
-## Ethical Considerations in Using Artificial Intelligence (A10), Dr. Rasmus Nielsen
+## Authors
+<small>Michael Garcia-Perez (mig009@ucsd.edu), Christine Deng (cydeng@ucsd.edu)</small>
 
 1. **Abstract**
+   "Your abstract content goes here."
