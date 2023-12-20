@@ -3,5 +3,5 @@ title: "Capstone Domain: TBD"
 source: .
 destination: _site
 url: "https://michael-garciaperez.github.io"
-baseurl: "/DSC180A-Methodology-5"
+baseurl: "/DSC180B-Capstone-Project"
 theme: jekyll-theme-cayman
