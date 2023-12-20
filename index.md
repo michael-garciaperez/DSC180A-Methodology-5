@@ -3,7 +3,7 @@ layout: default
 title: "Ethical Considerations in Using Artificial Intelligence"
 ---
 
-# Research Title: Addressing Popularity Bias for Recommender Systems
+# Addressing Popularity Bias for Recommender Systems
 
 ## Authors
 <small>Michael Garcia-Perez (mig009@ucsd.edu), Christine Deng (cydeng@ucsd.edu)</small>
