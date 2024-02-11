@@ -35,57 +35,48 @@
 
      # Import statements
      import random
-     from sklearn import linear_model
      from matplotlib import pyplot as plt
      from collections import defaultdict
      import gzip
+     import json
+     import numpy as np
+     import math
+     import pandas as pd
+     import scipy.optimize
+     import string
+     import random
+     import os
+     import tarfile
+     import warnings
+     
+     from sklearn import linear_model
      from sklearn.linear_model import LogisticRegression
      from sklearn.model_selection import train_test_split
      from sklearn.metrics import accuracy_score, balanced_accuracy_score
-
-     import json
-     import numpy
-     import math
-     import pandas as pd
      from sklearn.linear_model import LinearRegression
-     from sklearn.model_selection import train_test_split
      from sklearn.metrics import mean_squared_error
-
-     import scipy.optimize
      from sklearn import svm
-     import string
-     import random
-
+     from sklearn.metrics import jaccard_score
+     from sklearn.ensemble import RandomForestClassifier
+     from sklearn.model_selection import GridSearchCV
+     from sklearn.metrics import accuracy_score, classification_report
+     from sklearn.metrics import roc_curve, auc, precision_recall_curve, average_precision_score
+     from sklearn.inspection import permutation_importance
+     from sklearn.metrics.pairwise import cosine_similarity
+     from sklearn.model_selection import train_test_split as sklearn_train_test_split
+     
      from surprise import Dataset, Reader, accuracy
      from surprise.model_selection import cross_validate, train_test_split
      from surprise.prediction_algorithms.matrix_factorization import SVD
      from surprise import SVD
      from surprise import accuracy
-     import numpy as np
-     import os
-     import tarfile
-     import warnings
-     from sklearn.model_selection import train_test_split
-     from sklearn.linear_model import LinearRegression
-     from sklearn.metrics import mean_squared_error
-     from sklearn.metrics import jaccard_score
-
+     
      from aif360.datasets import StandardDataset
      from aif360.metrics import BinaryLabelDatasetMetric, ClassificationMetric
      from aif360.algorithms.preprocessing import Reweighing
      from aif360.algorithms.preprocessing import DisparateImpactRemover
-     from sklearn.ensemble import RandomForestClassifier
-     from sklearn.model_selection import train_test_split, GridSearchCV
-     from sklearn.metrics import accuracy_score, classification_report
-     from IPython.display import Markdown, display
-     from sklearn.metrics import roc_curve, auc, precision_recall_curve, average_precision_score
-     from sklearn.inspection import permutation_importance
-     from sklearn.metrics.pairwise import cosine_similarity
+     
      from scipy.stats import pearsonr
-
-     from sklearn.ensemble import RandomForestClassifier
-     from sklearn.metrics import accuracy_score, classification_report
-     from sklearn.model_selection import train_test_split as sklearn_train_test_split
      from IPython.display import Markdown, display
      ```
 
