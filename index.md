@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Ethical Considerations in Using Artificial Intelligence"
+title: "Capstone Domain: Ethical Considerations in Using Artificial Intelligence"
 ---
 
-# Addressing Popularity Bias for Recommender Systems
+# Mitigating Director Gender Bias in Movie Recommender Systems
 
 ## Authors
 <small>Michael Garcia-Perez (mig009@ucsd.edu), Christine Deng (cydeng@ucsd.edu)</small>
