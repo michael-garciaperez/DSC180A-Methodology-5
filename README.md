@@ -51,7 +51,6 @@
      
      from sklearn import linear_model
      from sklearn.linear_model import LogisticRegression
-     from sklearn.model_selection import train_test_split
      from sklearn.metrics import accuracy_score, balanced_accuracy_score
      from sklearn.linear_model import LinearRegression
      from sklearn.metrics import mean_squared_error
@@ -82,6 +81,8 @@
 
 5. **Acquire Data:**
    - Navigate to [the provided URL](https://grouplens.org/datasets/movielens/1m/) and download the data. Place both .csv files in the same folder as the notebook.
+   - Navigate to [the provided URL](https://figshare.com/articles/dataset/U_S_movies_with_gender-disambiguated_actors_directors_and_producers/4967876) and download the data. Place both .csv files in the same folder as the notebook.
+   - Navigate to [the provided URL](https://datasets.imdbws.com/) and download the title.basics.tsv.gz file. Place both .csv files in the same folder as the notebook.
 
 6. **Launch Jupyter Notebook:**
    - Start Jupyter Lab within the conda environment:
