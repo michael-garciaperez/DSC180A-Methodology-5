@@ -25,6 +25,7 @@
      !pip install protobuf==3.19.0 > /dev/null
      !pip install 'aif360[AdversarialDebiasing]' > /dev/null
      !pip install scikit-surprise > /dev/null
+     !pip install seaborn > /dev/null
      ```
 
 4. **Verify Installation:**
@@ -32,11 +33,9 @@
      ```python
      import warnings
      warnings.filterwarnings("ignore")
-
+     
      # Import statements
      import random
-     from matplotlib import pyplot as plt
-     from collections import defaultdict
      import gzip
      import json
      import numpy as np
@@ -46,9 +45,13 @@
      import string
      import random
      import os
+     import re
      import tarfile
      import warnings
-     
+     import seaborn as sns
+
+     from matplotlib import pyplot as plt
+     from collections import defaultdict
      from sklearn import linear_model
      from sklearn.linear_model import LogisticRegression
      from sklearn.metrics import accuracy_score, balanced_accuracy_score
