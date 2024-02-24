@@ -4,8 +4,8 @@
 @import "{{ site.theme }}";
 
 /* Custom Styles */
-.ribbon-outer {
-    background-color: #FF0000 !important; /* Red */
+.ribbon-outer .ribbon-inner {
+    background-color: #FF0000; /* Red */
 }
 
 body {
