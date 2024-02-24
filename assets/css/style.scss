@@ -3,6 +3,11 @@
 
 @import "{{ site.theme }}";
 
-.header {
-    ribbon-outer: #ff0000; /* Red */
+/* Custom Styles */
+.ribbon-outer {
+    background-color: #FF0000; /* Red */
+}
+
+body {
+    background-color: #001F3F; /* Dark Navy */
 }
