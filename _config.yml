@@ -1,7 +1,7 @@
-safe: true
+osafe: true
 title: "Mitigating Director Gender Bias in Movie Recommender Systems"
 source: .
 destination: _site
 url: "https://michael-garciaperez.github.io"
 baseurl: "/DSC180B-Capstone-Project"
-theme: jekyll-theme-cayman
+theme: jekyll-theme-merlot
