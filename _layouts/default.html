@@ -21,18 +21,13 @@
     {% seo %}
 
     {% include head-custom.html %}
-    <style>
-        body {
-            background-color: #001F3F; /* Dark Navy */
-        }
-    </style>
 </head>
 
 <body>
 <div class="shell">
 
     <header>
-        <div class="ribbon-outer" style="background-color: #FF0000;">
+        <div class="ribbon-outer">
             <div class="ribbon-inner">
                 <h1>{{ site.title | default: site.github.repository_name }}</h1>
                 <h2>{{ site.description | default: site.github.project_tagline }}</h2>
