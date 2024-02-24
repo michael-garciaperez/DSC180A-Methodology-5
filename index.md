@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Capstone Domain: Ethical Considerations in Using Artificial Intelligence"
+title: "Mitigating Director Gender Bias in Movie Recommender Systems"
 ---
 
 # Mitigating Director Gender Bias in Movie Recommender Systems
