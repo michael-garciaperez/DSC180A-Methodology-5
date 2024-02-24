@@ -27,7 +27,7 @@
 <div class="shell">
 
     <header>
-        <div class="ribbon-outer">
+        <div id="custom-ribbon" class="ribbon-outer">
             <div class="ribbon-inner">
                 <h1>{{ site.title | default: site.github.repository_name }}</h1>
                 <h2>{{ site.description | default: site.github.project_tagline }}</h2>
@@ -36,6 +36,7 @@
             <span class="right-tail"></span>
         </div>
     </header>
+
 
     {% if site.show_downloads %}
         <section id="downloads">
