@@ -1,35 +1,25 @@
-/* STYLES */
-
-@import 'jekyll-theme-merlot';
-
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
-
-/* Setting background image */
 body {
     font-family: 'Public Sans', sans-serif;
     background-image: url('../images/curtains.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
     color: white;
+    margin: 0; /* Reset margin to ensure body is centered properly */
 }
 
-header h2 {
-    font-family: 'Public Sans', sans-serif;
-    background-color: black;
-    font-size: 1em;
-    font-weight: 800;
-    font-style: normal;
-    color: #ece4d8;
-    text-align: center;
-    line-height: 1;
-    padding: 14px 20px 0;
+div.shell {
+    display: block;
+    width: 670px;
+    margin: 0 auto; /* Center the shell horizontally */
+}
 
-    border-width: 10px; 
-    border-image-source: url('../images/clapboard.png'); 
-    border-image-slice: fill; /* Make sure the entire image is used as the border */
-    border-image-repeat: repeat; /* Repeat the border image */
+header {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    max-width: 600px; /* Limit the maximum width of the header */
+    padding: 0 20px; /* Add padding to the header */
 }
 
 header h1 {
@@ -41,10 +31,25 @@ header h1 {
     color: #ece4d8;
     text-align: center;
     line-height: 1;
-    padding: 14px 20px 0;
-    
+    padding: 14px 0; /* Adjust padding to center content vertically */
     border-width: 10px; 
     border-image-source: url('../images/clapboard.png'); 
-    border-image-slice: fill; /* Make sure the entire image is used as the border */
-    border-image-repeat: repeat; /* Repeat the border image */
+    border-image-slice: fill;
+    border-image-repeat: repeat;
+}
+
+header h2 {
+    font-family: 'Public Sans', sans-serif;
+    background-color: black;
+    font-size: 1em;
+    font-weight: 800;
+    font-style: normal;
+    color: #ece4d8;
+    text-align: center;
+    line-height: 1;
+    padding: 14px 0; /* Adjust padding to center content vertically */
+    border-width: 10px; 
+    border-image-source: url('../images/clapboard.png'); 
+    border-image-slice: fill;
+    border-image-repeat: repeat;
 }
