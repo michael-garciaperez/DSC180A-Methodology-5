@@ -33,11 +33,11 @@ header h1 {
   font-size: 2.5em;
   font-weight: 800;
   font-style: normal;
-  color: white;
+  color: #ece4d8;
   text-align: center;
   line-height: 1;
   padding: 14px 0; /* Adjust padding to center content vertically */
-  position: relative; /* Ensure pseudo-element is positioned relative to the h1 */
+  position: relative; /* Ensure relative positioning for pseudo-element */
 }
 
 /* Background image behind h1 text */
@@ -46,10 +46,10 @@ header h1:before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 120%; /* Adjust the width of the background image */
-  height: 120%; /* Adjust the height of the background image */
+  width: 100%; /* Adjust the width of the background image */
+  height: 100%; /* Adjust the height of the background image */
   background-image: url('../images/clapboard.png');
-  background-size: contain; /* Ensure the entire background image fits within the h1 element */
+  background-size: cover; /* Ensure the entire background image covers the pseudo-element */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
   opacity: 0.5; /* Adjust opacity to control the visibility of the background */
   z-index: -1;
@@ -59,12 +59,15 @@ header h2 {
   font-size: 1em;
   font-weight: 800;
   font-style: normal;
-  color: white;
+  color: #ece4d8;
   text-align: center;
   line-height: 1;
   padding: 14px 0; /* Adjust padding to center content vertically */
-  max-width: 100%; /* Ensure h2 does not exceed the container width */
-  margin: 0 auto; /* Center the h2 horizontally */
+  background-color: black; /* Add black background */
+  border-width: 10px;
+  border-image-source: url('../images/clapboard.png');
+  border-image-slice: fill;
+  border-image-repeat: repeat;
 }
 
 /* Additional styles for h2 */
@@ -72,7 +75,6 @@ header h2 span {
   font-weight: bold;
   font-size: 1.5em;
   margin-bottom: 20px;
-  display: block;
 }
 
 header h2 span:last-child {
@@ -89,6 +91,5 @@ header h2 span:last-child {
   background-color: black;
   padding: 10px;
   margin: 10px;
-  max-width: 100%; /* Ensure the names do not exceed the container width */
 }
 
