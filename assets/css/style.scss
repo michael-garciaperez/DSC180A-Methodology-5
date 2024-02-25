@@ -13,6 +13,17 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     
-    /* Setting text color to white */
     color: #F5F5DC;
+}
+
+header h1 {
+    font-family: 'Zilla Slab', serif; /* Changing font to Zilla Slab */
+    background-color: black;
+    font-size: 2.5em;
+    font-weight: 800;
+    font-style: normal;
+    color: #ece4d8;
+    text-align: center;
+    line-height: 1;
+    padding: 14px 20px 0;
 }
