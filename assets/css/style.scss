@@ -49,7 +49,8 @@ header h1:before {
   width: 100%;
   height: 100%;
   background-image: url('../images/clapboard.png');
-  background-size: cover;
+  background-size: contain; /* Ensure the entire background image fits within the h1 element */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
   opacity: 0.5; /* Adjust opacity to control the visibility of the background */
   z-index: -1;
 }
