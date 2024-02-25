@@ -13,10 +13,22 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     
-    color: #F5F5DC;
+    color: white;
 }
 
 header h1 {
+    font-family: 'Public Sans', sans-serif;
+    background-color: black;
+    font-size: 2.5em;
+    font-weight: 800;
+    font-style: normal;
+    color: #ece4d8;
+    text-align: center;
+    line-height: 1;
+    padding: 14px 20px 0;
+}
+
+header h2 {
     font-family: 'Public Sans', sans-serif;
     background-color: black;
     font-size: 2.5em;
