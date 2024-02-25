@@ -18,6 +18,21 @@ header {
     text-align: center; /* Center align all content within header */
 }
 
+/* Style for author and mentor containers */
+.author-mentor-container {
+    text-align: center;
+}
+
+/* Style for author and mentor names */
+.author-mentor-container p {
+    display: inline-block; /* Display names inline-block */
+    background-color: black;
+    padding: 10px;
+    margin: 5px; /* Adjust margin for spacing */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    color: #ece4d8; /* Set text color to white */
+}
+
 /* Styling h1 */
 header h1 {
     font-size: 2.5em;
@@ -31,7 +46,6 @@ header h1 {
     border-image-source: url('../images/clapboard.png');
     border-image-slice: fill;
     border-image-repeat: repeat;
-    margin-bottom: 10px; /* Add margin bottom to create space between h1 and h2 */
 }
 
 /* Styling h2 */
@@ -44,18 +58,18 @@ header h2 {
     padding: 14px 0; /* Adjust padding to center content vertically */
     background-color: black; /* Add black background */
     border-width: 10px;
-    border-image-source: url('../images/clapboard.png');
+    border-image-source: url('/assets/images/clapboard.png');
     border-image-slice: fill;
     border-image-repeat: repeat;
-    margin-bottom: 20px; /* Add margin bottom for spacing */
 }
 
-/* Style for author and mentor names */
-header p {
-    background-color: black;
-    padding: 10px;
-    margin: 5px 10px; /* Adjust margin for spacing */
-    display: inline-block; /* Display names inline-block */
-    border-radius: 5px; /* Add border-radius for rounded corners */
-    color: #ece4d8; /* Set text color to white */
+/* Additional styles for h2 */
+header h2 span {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+header h2 span:last-child {
+    margin-top: 40px;
 }
