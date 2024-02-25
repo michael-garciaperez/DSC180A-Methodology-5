@@ -75,7 +75,7 @@ header h2 span:last-child {
 
 .author-names p,
 .mentor-names p {
-  display: inline; /* Display names in the same line */
+  display: inline-block; /* Display names in the same line */
   background-color: black;
   padding: 10px;
   margin: 10px;
