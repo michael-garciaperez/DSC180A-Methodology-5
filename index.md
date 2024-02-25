@@ -35,9 +35,4 @@ Your results summary content goes here.
 
 ## 6. Conclusion & Discussion
 
-Your content goes here.
-
-## 8. Conclusion & Discussion
-
 Your conclusion and discussion content goes here.
-
