@@ -25,6 +25,7 @@ header {
   position: relative;
   z-index: 2;
   max-width: 600px;
+  text-align: center; /* Center the text within the header */
 }
 
 header h1,
@@ -37,6 +38,7 @@ header h2 {
   text-align: center;
   line-height: 1;
   padding: 20px;
+  margin: 0 auto; /* Center the h1 and h2 horizontally */
   border-width: 10px; 
   border-image-source: url('../images/clapboard.png'); 
   border-image-slice: fill;
