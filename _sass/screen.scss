@@ -59,9 +59,11 @@ header h2 {
 
 header h2 span {
   font-weight: bold;
-  font-size: 1em; 
+  font-size: 1.5em; /* Adjust font size here */
   margin-bottom: 20px;
   text-align: center; /* Align span elements center */
+  display: inline-block; /* Display names on the same line */
+  width: 50%; /* Set width to ensure equal distribution */
 }
 
 header h2 span:last-child {
