@@ -82,4 +82,6 @@ header h2 span:last-child {
 .author-mentor-container.mentor-names {
   display: flex;
   flex-wrap: nowrap; /* Prevent wrapping to next line */
+  justify-content: center; /* Center align mentor names */
+  width: 100%; /* Set width to 100% to accommodate all mentor names */
 }
