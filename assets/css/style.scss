@@ -38,11 +38,9 @@ header h1 {
   text-align: center;
   line-height: 1;
   padding: 14px 0; /* Adjust padding to center content vertically */
-  background-color: black; /* Add black background */
-  border-width: 10px;
-  border-image-source: url('../images/clapboard.png'); /* Set the clapboard image as border background */
-  border-image-slice: fill;
-  border-image-repeat: repeat;
+  background: url('../images/clapboard.png') center center no-repeat, black; /* Set clapboard image as background */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header h2 {
@@ -53,11 +51,9 @@ header h2 {
   text-align: center;
   line-height: 1;
   padding: 14px 0; /* Adjust padding to center content vertically */
-  background-color: black; /* Add black background */
-  border-width: 10px;
-  border-image-source: url('../images/clapboard.png'); /* Set the clapboard image as border background */
-  border-image-slice: fill;
-  border-image-repeat: repeat;
+  background: url('../images/clapboard.png') center center no-repeat, black; /* Set clapboard image as background */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Additional styles for h2 */
@@ -82,4 +78,3 @@ header h2 span:last-child {
   padding: 10px;
   margin: 10px;
 }
-
