@@ -14,9 +14,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Ensure content is displayed in a column */
+    align-items: center; /* Center content horizontally */
+    justify-content: flex-start; /* Align content at the top */
     min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
 }
 
@@ -25,7 +27,6 @@ header {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    padding: 0 20px; /* Add padding to the header */
 }
 
 /* Styling h1 */
@@ -36,7 +37,7 @@ header h1 {
     color: #ece4d8;
     text-align: center;
     line-height: 1;
-    padding: 14px 0; /* Adjust padding to center content vertically */
+    padding: 14px 20px 0;
     background-color: black; /* Add black background */
     border-width: 10px;
     border-image-source: url('../images/clapboard.png');
@@ -52,7 +53,7 @@ header h2 {
     color: #ece4d8;
     text-align: center;
     line-height: 1;
-    padding: 14px 0; /* Adjust padding to center content vertically */
+    padding: 14px 20px 0;
     background-color: black; /* Add black background */
     border-width: 10px;
     border-image-source: url('../images/clapboard.png');
