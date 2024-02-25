@@ -7,14 +7,24 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
 }
+
+div.shell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the shell height to 100% of viewport height */
+}
+
+/* header */
 
 header {
   position: relative;
   z-index: 2;
-  margin: 0 auto;
   max-width: 600px;
-  top: 38px;
 }
 
 header h1,
