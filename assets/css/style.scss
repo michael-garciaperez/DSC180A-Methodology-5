@@ -4,8 +4,6 @@
 
 /* STYLES */
 
-/* STYLES */
-
 body {
   background-image: url('../images/curtains.jpeg');
   background-size: cover; /* Ensure the background image covers the entire viewport */
@@ -73,7 +71,12 @@ header h2 span:last-child {
 }
 
 /* Style for author and mentor names */
-header p {
+.author-mentor-container {
+  text-align: center;
+}
+
+.author-mentor-container p {
+  display: inline-block;
   background-color: black;
   padding: 10px;
   margin: 10px;
