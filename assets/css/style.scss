@@ -40,7 +40,7 @@ header h1 {
   padding: 14px 0; /* Adjust padding to center content vertically */
   background-color: black; /* Add black background */
   border-width: 10px;
-  border-image-source: url('../images/clapboard.png');
+  border-image-source: url('../images/clapboard.png'); /* Set the clapboard image as border background */
   border-image-slice: fill;
   border-image-repeat: repeat;
 }
@@ -55,7 +55,7 @@ header h2 {
   padding: 14px 0; /* Adjust padding to center content vertically */
   background-color: black; /* Add black background */
   border-width: 10px;
-  border-image-source: url('../images/clapboard.png');
+  border-image-source: url('../images/clapboard.png'); /* Set the clapboard image as border background */
   border-image-slice: fill;
   border-image-repeat: repeat;
 }
@@ -82,5 +82,4 @@ header h2 span:last-child {
   padding: 10px;
   margin: 10px;
 }
-
 
