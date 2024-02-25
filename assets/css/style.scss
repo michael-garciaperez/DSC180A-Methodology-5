@@ -3,45 +3,14 @@
 
 //@import 'jekyll-theme-merlot';
 
+/* assets/css/style.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
-
-/* Setting background image and font */
-body {
-    font-family: 'Public Sans', sans-serif;
-    background-image: url('../images/curtains.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
-}
-
-/* Centering header and setting max-width */
-header {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
 
 /* Styling h1 and h2 */
 header h1, header h2 {
     font-size: 2.5em; /* h1 */
     font-size: 1em; /* h2 */
-    font-weight: 800;
-    font-style: normal;
-    color: #ece4d8;
-    text-align: center;
-    line-height: 1;
-    padding: 14px 20px 0;
-    background-color: black; /* Add black background */
-    border-width: 10px;
-    border-image-source: url('../images/clapboard.png');
-    border-image-slice: fill;
-    border-image-repeat: repeat;
 }
 
 /* Additional styles for h2 */
