@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Public Sans', sans-serif;
     background-image: url('../images/curtains.jpeg');
@@ -22,10 +23,9 @@ header {
     padding: 0 20px; /* Add padding to the header */
 }
 
-header h1 {
+header h1, header h2 {
     font-family: 'Public Sans', sans-serif;
     background-color: black;
-    font-size: 2.5em;
     font-weight: 800;
     font-style: normal;
     color: #ece4d8;
@@ -38,18 +38,3 @@ header h1 {
     border-image-repeat: repeat;
 }
 
-header h2 {
-    font-family: 'Public Sans', sans-serif;
-    background-color: black;
-    font-size: 1em;
-    font-weight: 800;
-    font-style: normal;
-    color: #ece4d8;
-    text-align: center;
-    line-height: 1;
-    padding: 14px 0; /* Adjust padding to center content vertically */
-    border-width: 10px; 
-    border-image-source: url('../images/clapboard.png'); 
-    border-image-slice: fill;
-    border-image-repeat: repeat;
-}
