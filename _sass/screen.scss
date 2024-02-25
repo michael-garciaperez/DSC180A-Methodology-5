@@ -36,9 +36,6 @@ header h2 {
 
 .author-mentor-container {
     text-align: center; /* Center align container content */
-    background-color: black; /* Add black background */
-    padding: 20px; /* Add padding for better readability */
-    border-radius: 5px; /* Add border-radius for rounded corners */
 }
 
 .author-mentor-container h2 {
@@ -46,11 +43,10 @@ header h2 {
 }
 
 .author-mentor-container p {
-    margin: 5px 0; /* Add margin for spacing between names */
-    display: inline; /* Display names inline */
+    margin: 5px; /* Add margin for spacing between names */
+    display: inline-block; /* Display names inline-block */
     background-color: black; /* Add black background to names */
     padding: 10px; /* Add padding for better readability */
     border-radius: 5px; /* Add border-radius for rounded corners */
     color: #ece4d8; /* Set text color to white */
-    margin-right: 10px; /* Add margin-right for spacing between names */
 }
