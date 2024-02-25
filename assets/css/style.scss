@@ -36,6 +36,7 @@ header h1 {
   color: white;
   text-align: center;
   line-height: 1;
+  padding: 80px 0; /* Adjusted padding to center vertically */
   position: relative; /* Ensure proper stacking order */
   background-image: url('../images/clapboard.png');
   background-size: cover; /* Cover the entire header area */
@@ -79,3 +80,4 @@ header h2 span:last-child {
   padding: 10px;
   margin: 10px;
 }
+
