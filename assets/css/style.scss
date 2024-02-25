@@ -1,6 +1,5 @@
 ---
 ---
-
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
 
 /* STYLES */
@@ -30,26 +29,19 @@ header {
   padding: 0 20px; /* Add padding to the header */
 }
 
-header h1, header h2 {
+header h1 {
+  font-size: 2.5em;
   font-weight: 800;
   font-style: normal;
   color: white;
   text-align: center;
   line-height: 1;
-}
-
-header h1 {
-  font-size: 2.5em;
   padding: 14px 0; /* Adjust padding to center content vertically */
+  position: relative; /* Ensure pseudo-element is positioned relative to the h1 */
 }
 
-header h2 {
-  font-size: 1em;
-  padding: 14px 0; /* Adjust padding to center content vertically */
-}
-
-/* Background image behind text */
-header h1:before, header h2:before {
+/* Background image behind h1 text */
+header h1:before {
   content: '';
   position: absolute;
   top: 0;
@@ -60,6 +52,16 @@ header h1:before, header h2:before {
   background-size: cover;
   opacity: 0.5; /* Adjust opacity to control the visibility of the background */
   z-index: -1;
+}
+
+header h2 {
+  font-size: 1em;
+  font-weight: 800;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  line-height: 1;
+  padding: 14px 0; /* Adjust padding to center content vertically */
 }
 
 /* Additional styles for h2 */
@@ -84,3 +86,4 @@ header h2 span:last-child {
   padding: 10px;
   margin: 10px;
 }
+
