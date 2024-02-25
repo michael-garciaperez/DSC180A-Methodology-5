@@ -1,5 +1,4 @@
-/* STYLES */
-
+/* Setting background image and font */
 body {
   background-image: url('../images/curtains.jpeg');
   background-size: cover; /* Ensure the background image covers the entire viewport */
@@ -78,10 +77,7 @@ header h2 span:last-child {
   margin: 10px;
 }
 
-/* Use flexbox to ensure all mentor names are on the same line */
-.author-mentor-container.mentor-names {
-  display: flex;
-  flex-wrap: nowrap; /* Prevent wrapping to next line */
-  justify-content: center; /* Center align mentor names */
-  width: 100%; /* Set width to 100% to accommodate all mentor names */
+/* Style for mentor names container */
+.mentor-names {
+  display: inline-block;
 }
