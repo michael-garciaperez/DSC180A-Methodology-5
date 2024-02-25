@@ -1,67 +1,61 @@
-/* STYLES */
-
+/* Setting background image and font */
 body {
-  background-image: url('../assets/images/curtains.jpeg');
-  background-size: cover; /* Ensure the background image covers the entire viewport */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
-  font-family: 'Public Sans', sans-serif; /* Set the font family to Public Sans */
-  color: white; /* Set text color to white */
-  margin: 0; /* Reset margin to ensure body is centered properly */
+    font-family: 'Public Sans', sans-serif;
+    background-image: url('../assets/images/curtains.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
-div.shell {
-  display: block;
-  width: 670px;
-  margin: 0 auto; /* Center the shell horizontally */
-}
-
-/* header */
-
+/* Centering header and setting max-width */
 header {
-  position: relative;
-  z-index: 2;
-  margin: 0 auto;
-  max-width: 600px; /* Limit the maximum width of the header */
-  padding: 0 20px; /* Add padding to the header */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center; /* Center align all content within header */
 }
 
+/* Styling h1 */
 header h1 {
-  font-size: 2.5em;
-  font-weight: 800;
-  font-style: normal;
-  color: #ece4d8;
-  text-align: center;
-  line-height: 1;
-  padding: 14px 0; /* Adjust padding to center content vertically */
-  background-color: black; /* Add black background */
-  border-width: 10px;
-  border-image-source: url('../assets/images/clapboard.png');
-  border-image-slice: fill;
-  border-image-repeat: repeat;
+    font-size: 2.5em;
+    font-weight: 800;
+    font-style: normal;
+    color: #ece4d8;
+    line-height: 1;
+    padding: 14px 20px 0;
+    background-color: black; /* Add black background */
+    border-width: 10px;
+    border-image-source: url('../assets/images/clapboard.png');
+    border-image-slice: fill;
+    border-image-repeat: repeat;
+    margin-bottom: 10px; /* Add margin bottom to create space between h1 and h2 */
 }
 
+/* Styling h2 */
 header h2 {
-  font-size: 1em;
-  font-weight: 800;
-  font-style: normal;
-  color: #ece4d8;
-  text-align: center;
-  line-height: 1;
-  padding: 14px 0; /* Adjust padding to center content vertically */
-  background-color: black; /* Add black background */
-  border-width: 10px;
-  border-image-source: url('../assets/images/clapboard.png');
-  border-image-slice: fill;
-  border-image-repeat: repeat;
+    font-size: 1em;
+    font-weight: 800;
+    font-style: normal;
+    color: #ece4d8;
+    line-height: 1;
+    padding: 14px 20px 0;
+    background-color: black; /* Add black background */
+    border-width: 10px;
+    border-image-source: url('../assets/images/clapboard.png');
+    border-image-slice: fill;
+    border-image-repeat: repeat;
+    margin-bottom: 20px; /* Add margin bottom for spacing */
 }
 
 /* Additional styles for h2 */
 header h2 span {
-  font-weight: bold;
-  font-size: 1.5em;
-  margin-bottom: 20px;
-}
-
-header h2 span:last-child {
-  margin-top: 40px;
+    display: block; /* Display each name on a separate line */
+    background-color: black; /* Add black background to names */
+    padding: 10px; /* Add padding for better readability */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    color: #ece4d8; /* Set text color to white */
+    margin-bottom: 10px; /* Add margin bottom for spacing between names */
 }
