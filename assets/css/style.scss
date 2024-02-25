@@ -26,6 +26,11 @@ header h1 {
     text-align: center;
     line-height: 1;
     padding: 14px 20px 0;
+    
+    border-width: 10px; 
+    border-image-source: url('../images/frame.png'); 
+    border-image-slice: fill; /* Make sure the entire image is used as the border */
+    border-image-repeat: repeat; /* Repeat the border image */
 }
 
 header h2 {
@@ -38,4 +43,10 @@ header h2 {
     text-align: center;
     line-height: 1;
     padding: 14px 20px 0;
+
+    border-width: 10px; 
+    border-image-source: url('../images/frame.png'); 
+    border-image-slice: fill; /* Make sure the entire image is used as the border */
+    border-image-repeat: repeat; /* Repeat the border image */
+
 }
