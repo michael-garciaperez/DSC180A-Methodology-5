@@ -67,6 +67,8 @@ header h2 span:last-child {
 /* Style for author and mentor names */
 .author-mentor-container {
   text-align: center;
+  max-width: 670px; /* Adjusted max-width to match the header width */
+  margin: 0 auto; /* Center the container horizontally */
 }
 
 .author-mentor-container p {
@@ -74,5 +76,8 @@ header h2 span:last-child {
   background-color: black;
   padding: 10px;
   margin: 10px;
+  max-width: calc(100% - 20px); /* Adjusted max-width to match the container width minus padding */
+  overflow: hidden; /* Prevent overflowing content */
+  text-overflow: ellipsis; /* Add ellipsis for text overflow */
+  white-space: nowrap; /* Prevent wrapping */
 }
-
