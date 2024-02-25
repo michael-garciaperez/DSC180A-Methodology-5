@@ -4,6 +4,7 @@ body {
   background-image: url('../assets/images/curtains.jpeg');
   background-size: cover; /* Ensure the background image covers the entire viewport */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
+  font-family: 'Cinzel', serif; /* Set the font family to Cinzel */
 }
 
 div.shell {
@@ -35,7 +36,7 @@ header h1 {
 
 header h2 {
   background-color: black;
-  font: bold italic .85em/1.5 Georgia, Times, “Times New Roman”, serif;
+  font: bold italic .85em/1.5 'Cinzel', serif; /* Set the font family to Cinzel */
   color: #ece4d8;
   padding-bottom: 14px;
   margin-top: -3px;
