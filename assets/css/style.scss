@@ -26,8 +26,8 @@ header {
   position: relative;
   z-index: 2;
   margin: 0 auto;
-  max-width: 670px; /* Adjusted width of the header */
-  padding: 175px 0 25px; /* Adjusted padding */
+  max-width: 670px; /* Adjusted maximum width */
+  padding: 175px 40px 25px; /* Adjusted padding */
   background-image: url('../images/clapboard.png');
   background-size: 100%; /* Adjusted size of the background image */
   background-repeat: no-repeat;
@@ -76,3 +76,4 @@ header h2 span:last-child {
   padding: 10px;
   margin: 10px;
 }
+
