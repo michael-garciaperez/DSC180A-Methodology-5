@@ -21,32 +21,29 @@
   {% include head-custom.html %}
 </head>
 
-<header>
-  <div class="ribbon-outer">
-    <div class="ribbon-inner">
-      <h1>{{ site.title | default: site.github.repository_name }}</h1>
-    </div>
-  </div>
-
-  
-<h2 style="text-align: center; font-weight: normal; display: flex; flex-direction: column; align-items: center; padding: 20px;">
-  <span style="margin-bottom: 20px; font-weight: bold; font-size: 1.5em;">Authors:</span>
-  <span style="display: flex; justify-content: space-between; width: 100%;">
-    <span style="text-align: center;">Michael Garcia-Perez<br>mig009@ucsd.edu</span>
-    <span style="text-align: center;">Christine Deng<br>cydeng@ucsd.edu</span>
-  </span>
-  <span style="margin-top: 40px; margin-bottom: 20px; font-weight: bold; font-size: 1.5em;">Mentors:</span>
-  <span style="display: flex; justify-content: space-between; width: 100%;">
-    <span style="text-align: center;">Emily Ramond<br>eramond@deloitte.com</span>
-    <span style="text-align: center;">Parker Addison<br>paddison@deloitte.com</span>
-    <span style="text-align: center;">Greg Thein<br>gthein@deloitte.com</span>
-  </span>
-</h2>
-
-
-</header>  
-
 <body>
+  <header>
+    <div class="ribbon-outer">
+      <div class="ribbon-inner">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+      </div>
+    </div>
+
+    <h2 style="text-align: center; font-weight: normal; display: flex; flex-direction: column; align-items: center; padding: 20px;">
+      <span style="margin-bottom: 20px; font-weight: bold; font-size: 1.5em;">Authors:</span>
+      <span style="display: flex; justify-content: space-between; width: 100%;">
+        <span style="text-align: center;">Michael Garcia-Perez<br>mig009@ucsd.edu</span>
+        <span style="text-align: center;">Christine Deng<br>cydeng@ucsd.edu</span>
+      </span>
+      <span style="margin-top: 40px; margin-bottom: 20px; font-weight: bold; font-size: 1.5em;">Mentors:</span>
+      <span style="display: flex; justify-content: space-between; width: 100%;">
+        <span style="text-align: center;">Emily Ramond<br>eramond@deloitte.com</span>
+        <span style="text-align: center;">Parker Addison<br>paddison@deloitte.com</span>
+        <span style="text-align: center;">Greg Thein<br>gthein@deloitte.com</span>
+      </span>
+    </h2>
+  </header>
+
   <div class="shell">
     <section id="main_content">
       {{ content }}
