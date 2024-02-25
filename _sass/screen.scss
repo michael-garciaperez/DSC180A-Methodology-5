@@ -1,5 +1,11 @@
 /* STYLES */
 
+body {
+  background-image: url('../assets/images/curtains.jpeg');
+  background-size: cover; /* Ensure the background image covers the entire viewport */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
 div.shell {
   display: block;
   width: 670px;
