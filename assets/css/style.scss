@@ -1,13 +1,52 @@
----
----
+/* STYLES */
 
-@import 'jekyll-theme-merlot';
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
 
 body {
-    background-image: url('../images/curtains.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  font-family: 'Public Sans', sans-serif;
+  background-image: url('../assets/images/curtains.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-    color: #F5F5DC; /* Ivory color code */
+div.shell {
+  display: block;
+  width: 670px;
+  margin: 0 auto;
+}
+
+/* header */
+
+header {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 600px;
+  top: 38px;
+}
+
+header h1 {
+  background-color: black;
+  font-size: 2.5em;
+  font-weight: 800;
+  font-style: normal;
+  color: #ece4d8;
+  text-align: center;
+  line-height: 1;
+  padding: 14px 20px 0;
+}
+
+header h2 {
+  background-color: black;
+  font: bold italic .85em/1.5 Georgia, Times, “Times New Roman”, serif;
+  color: #ece4d8;
+  padding-bottom: 14px;
+  margin-top: -3px;
+  text-align: center;
+}
+
+section#main_content {
+  z-index: 2;
+  padding: 20px 82px 0;
+  min-height: 185px;
 }
