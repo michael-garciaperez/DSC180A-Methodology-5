@@ -12,10 +12,6 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
 }
 
 /* Centering header and setting max-width */
@@ -23,6 +19,7 @@ header {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
+    text-align: center; /* Center align all content within header */
 }
 
 /* Styling h1 */
@@ -31,7 +28,6 @@ header h1 {
     font-weight: 800;
     font-style: normal;
     color: #ece4d8;
-    text-align: center;
     line-height: 1;
     padding: 14px 20px 0;
     background-color: black; /* Add black background */
@@ -39,6 +35,7 @@ header h1 {
     border-image-source: url('../images/clapboard.png');
     border-image-slice: fill;
     border-image-repeat: repeat;
+    margin-bottom: 10px; /* Add margin bottom to create space between h1 and h2 */
 }
 
 /* Styling h2 */
@@ -47,7 +44,6 @@ header h2 {
     font-weight: 800;
     font-style: normal;
     color: #ece4d8;
-    text-align: center;
     line-height: 1;
     padding: 14px 20px 0;
     background-color: black; /* Add black background */
@@ -55,24 +51,17 @@ header h2 {
     border-image-source: url('../images/clapboard.png');
     border-image-slice: fill;
     border-image-repeat: repeat;
+    margin-bottom: 20px; /* Add margin bottom for spacing */
 }
 
 /* Additional styles for h2 */
 header h2 span {
-    font-weight: bold;
-    font-size: 1.5em;
-    margin-bottom: 20px; /* Add more spacing between names */
-    display: inline-block; /* Ensure each name is on a separate line */
+    display: block; /* Display each name on a separate line */
     background-color: black; /* Add black background to names */
     padding: 10px; /* Add padding for better readability */
     border-radius: 5px; /* Add border-radius for rounded corners */
     color: #ece4d8; /* Set text color to white */
-    margin-right: 10px; /* Add right margin for spacing between names */
-}
-
-header h2 span:last-child {
-    margin-top: 40px;
-    margin-bottom: 0; /* Remove bottom margin for last span */
+    margin-bottom: 10px; /* Add margin bottom for spacing between names */
 }
 
 
