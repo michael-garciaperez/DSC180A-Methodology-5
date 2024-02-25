@@ -26,7 +26,7 @@ header {
   z-index: 2;
   margin: 0 auto;
   max-width: 600px;
-  padding: 0 20px;
+  padding: 50px 20px 80px; /* Adjusted padding to move text down */
 }
 
 header h1 {
@@ -36,10 +36,9 @@ header h1 {
   color: white;
   text-align: center;
   line-height: 1;
-  padding: 80px 0; /* Adjusted padding to center vertically */
-  position: relative; /* Ensure proper stacking order */
+  position: relative;
   background-image: url('../images/clapboard.png');
-  background-size: cover; /* Cover the entire header area */
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
