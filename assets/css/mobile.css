@@ -136,8 +136,8 @@ header {
 header span.ribbon-inner {
   position: relative;
   display: block;
-  background-color: #cd596b;
-  border: 8px solid #7c334f;
+  background-color: #800000;
+  border: 8px solid #800000;
   padding: 6px;
   z-index: 1;
 }
@@ -168,7 +168,6 @@ header h1 {
   font-size: 2em;
   font-weight: bolder;
   font-style: normal;
-  text-transform: uppercase;
   color: #ece4d8;
   text-align: center;
   line-height:1;  
@@ -228,14 +227,14 @@ footer {
 footer span.ribbon-outer {
   display: block;
   position: relative;
-  border-bottom: 2px solid #bdb6ad;
+  border-bottom: 2px solid #800000;
 }
 
 footer span.ribbon-inner {
   position: relative;
   display: block;
-  background-color: #cd596b;
-  border: 8px solid #7c334f;
+  background-color: #800000;
+  border: 8px solid #800000;
   padding: 6px;
   z-index: 1;
 }
@@ -252,9 +251,9 @@ footer a {
 }
 
 footer span.ribbon-inner p {
-  background-color: #7c334f;
+  background-color: #800000;
   margin: 0;
-  color: #e69b95;
+  color: #800000;
   font: bold italic 22px/1 Georgia, Times, “Times New Roman”, serif;
   height: auto;
   line-height: 1.1;
@@ -265,9 +264,8 @@ footer span.ribbon-inner a {
   display: block;
   position: relative;
   bottom: 0;
-  color: #7eb0d2;
+  color: #800000;
   font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
   font-style: normal;
   font-weight: bolder;
   font-size: 38px;
