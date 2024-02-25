@@ -1,7 +1,7 @@
 /* Setting background image and font */
 body {
     font-family: 'Public Sans', sans-serif;
-    background-image: url('../images/curtains.jpeg');
+    background-image: url('../assets/images/curtains.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,23 +18,7 @@ header {
     text-align: center; /* Center align all content within header */
 }
 
-/* Styling h1 */
-header h1 {
-    font-size: 2.5em;
-    font-weight: 800;
-    font-style: normal;
-    color: #ece4d8;
-    line-height: 1;
-    padding: 14px 20px 0;
-    background-color: black; /* Add black background */
-    border-width: 10px;
-    border-image-source: url('../images/clapboard.png');
-    border-image-slice: fill;
-    border-image-repeat: repeat;
-    margin-bottom: 10px; /* Add margin bottom to create space between h1 and h2 */
-}
-
-/* Styling h2 */
+/* Additional styles for h2 */
 header h2 {
     font-size: 1em;
     font-weight: 800;
@@ -44,18 +28,27 @@ header h2 {
     padding: 14px 20px 0;
     background-color: black; /* Add black background */
     border-width: 10px;
-    border-image-source: url('../images/clapboard.png');
+    border-image-source: url('../assets/images/clapboard.png');
     border-image-slice: fill;
     border-image-repeat: repeat;
     margin-bottom: 20px; /* Add margin bottom for spacing */
 }
 
-/* Additional styles for h2 */
-header h2 span {
-    display: block; /* Display each name on a separate line */
+.author-mentor-container {
+    text-align: center; /* Center align container content */
+    background-color: black; /* Add black background */
+    padding: 20px; /* Add padding for better readability */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+.author-mentor-container h2 {
+    margin-bottom: 10px; /* Add margin bottom for spacing between title and names */
+}
+
+.author-mentor-container p {
+    margin: 5px 0; /* Add margin for spacing between names */
     background-color: black; /* Add black background to names */
     padding: 10px; /* Add padding for better readability */
     border-radius: 5px; /* Add border-radius for rounded corners */
     color: #ece4d8; /* Set text color to white */
-    margin-bottom: 10px; /* Add margin bottom for spacing between names */
 }
