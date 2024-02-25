@@ -4,5 +4,8 @@
 @import 'jekyll-theme-merlot';
 
 body {
-    background-color: #111111; /* Very dark gray */
+    background-image: url('../assets/images/curtains.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
