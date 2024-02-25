@@ -1,20 +1,13 @@
 /* STYLES */
 
 body {
-  background-image: url('../assets/images/curtains.jpeg');
-  background-size: cover; /* Ensure the background image covers the entire viewport */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
-  font-family: 'Public Sans', sans-serif; /* Set the font family to Public Sans */
-  color: white; /* Set text color to white */
+  font-family: 'Public Sans', sans-serif;
+  background-image: url('../images/curtains.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }
-
-div.shell {
-  display: block;
-  width: 670px;
-  margin: 0 auto;
-}
-
-/* header */
 
 header {
   position: relative;
@@ -24,50 +17,33 @@ header {
   top: 38px;
 }
 
-header h1 {
+header h1,
+header h2 {
+  font-family: 'Public Sans', sans-serif;
   background-color: black;
-  font-size: 2.5em;
   font-weight: 800;
   font-style: normal;
-  color: white;
+  color: #ece4d8;
   text-align: center;
   line-height: 1;
-  padding: 14px 20px 0;
-}
-
-header h2 {
-  background-color: black;
-  color: white;
-  padding-bottom: 14px;
-  margin-top: -3px;
-}
-
-section#main_content {
-  z-index: 2;
-  padding: 20px 82px 0;
-  min-height: 185px;
-}
-
-/* Additional styles for h2 */
-header h2 {
-  font-weight: normal;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
+  border-width: 10px; 
+  border-image-source: url('../images/clapboard.png'); 
+  border-image-slice: fill;
+  border-image-repeat: repeat;
+}
+
+header h2 {
+  font-size: 1em;
 }
 
 header h2 span {
   font-weight: bold;
-  font-size: 1em; /* Adjust font size here */
-  margin-bottom: 10px; /* Adjust margin as needed */
-  text-align: center; /* Align span elements center */
-}
-
-header h2 span:nth-child(2) {
-  margin-bottom: 20px; /* Increase margin between the two spans */
+  font-size: 1em;
+  margin-bottom: 10px;
+  display: block;
 }
 
 header h2 span:last-child {
-  margin-top: 20px; /* Adjust margin as needed */
+  margin-top: 20px;
 }
