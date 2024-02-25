@@ -3,23 +3,21 @@
 
 //@import 'jekyll-theme-merlot';
 
-/* assets/css/style.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
 
-/* Styling h1 and h2 */
+/* Resetting body margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Applying default styles to h1 and h2 */
 header h1, header h2 {
-    font-size: 2.5em; /* h1 */
-    font-size: 1em; /* h2 */
+    font-size: 2.5em;
 }
 
-/* Additional styles for h2 */
-header h2 span {
-    font-weight: bold;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-header h2 span:last-child {
-    margin-top: 40px;
+/* Adjusting styles for h2 */
+header h2 {
+    font-size: 1em;
 }
