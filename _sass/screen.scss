@@ -1,80 +1,82 @@
-/* Setting background image and font */
+/* STYLES */
+
+/* STYLES */
+
 body {
-    font-family: 'Public Sans', sans-serif;
-    background-image: url('../images/curtains.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    margin: 0;
-    padding: 0;
+  background-image: url('../images/curtains.jpeg'); /* Fix the background image path */
+  background-size: cover; /* Ensure the background image covers the entire viewport */
+  background-position: center; /* Center the background image */
+  font-family: 'Public Sans', sans-serif; /* Set the font family to Public Sans */
+  color: white; /* Set text color to white */
+  margin: 0; /* Reset margin to ensure body is centered properly */
 }
 
-/* Centering header and setting max-width */
+div.shell {
+  display: block;
+  width: 670px;
+  margin: 0 auto; /* Center the shell horizontally */
+}
+
+/* header */
+
 header {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center; /* Center align all content within header */
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 600px; /* Limit the maximum width of the header */
+  padding: 0 20px; /* Add padding to the header */
 }
 
-/* Style for author and mentor containers */
-.author-mentor-container {
-    display: flex;
-    justify-content: center;
-}
-
-/* Style for author and mentor names */
-.author-mentor-container div {
-    text-align: center;
-    margin: 0 10px;
-}
-
-.author-mentor-container p {
-    background-color: black;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    color: #ece4d8;
-}
-
-/* Styling h1 */
 header h1 {
-    font-size: 2.5em;
-    font-weight: 800;
-    font-style: normal;
-    color: #ece4d8;
-    line-height: 1;
-    padding: 14px 0; /* Adjust padding to center content vertically */
-    background-color: black; /* Add black background */
-    border-width: 10px;
-    border-image-source: url('../images/clapboard.png');
-    border-image-slice: fill;
-    border-image-repeat: repeat;
+  font-size: 2.5em;
+  font-weight: 800;
+  font-style: normal;
+  color: #ece4d8;
+  text-align: center;
+  line-height: 1;
+  padding: 14px 0; /* Adjust padding to center content vertically */
+  background-color: black; /* Add black background */
+  border-width: 10px;
+  border-image-source: url('../images/clapboard.png');
+  border-image-slice: fill;
+  border-image-repeat: repeat;
 }
 
-/* Styling h2 */
 header h2 {
-    font-size: 1em;
-    font-weight: 800;
-    font-style: normal;
-    color: #ece4d8;
-    line-height: 1;
-    padding: 14px 0; /* Adjust padding to center content vertically */
-    background-color: black; /* Add black background */
-    border-width: 10px;
-    border-image-source: url('../images/clapboard.png');
-    border-image-slice: fill;
-    border-image-repeat: repeat;
+  font-size: 1em;
+  font-weight: 800;
+  font-style: normal;
+  color: #ece4d8;
+  text-align: center;
+  line-height: 1;
+  padding: 14px 0; /* Adjust padding to center content vertically */
+  background-color: black; /* Add black background */
+  border-width: 10px;
+  border-image-source: url('../images/clapboard.png');
+  border-image-slice: fill;
+  border-image-repeat: repeat;
 }
 
 /* Additional styles for h2 */
 header h2 span {
-    font-weight: bold;
-    font-size: 1.5em;
-    margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
 
 header h2 span:last-child {
-    margin-top: 40px;
+  margin-top: 40px;
+}
+
+/* Style for author and mentor names */
+.author-mentor-container {
+  text-align: center;
+}
+
+.author-names p,
+.mentor-names p {
+  display: inline-block; /* Display names in the same line */
+  background-color: black;
+  padding: 10px;
+  margin: 10px;
 }
