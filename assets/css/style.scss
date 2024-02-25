@@ -25,12 +25,12 @@ header {
   position: relative;
   z-index: 2;
   margin: 0 auto;
-  max-width: 100%;
-  padding: 200px 20px 80px; /* Adjusted padding-top */
+  max-width: 600px; /* Adjusted width of the header */
+  padding: 200px 20px 80px;
   background-image: url('../images/clapboard.png');
-  background-size: cover;
+  background-size: 80%; /* Adjusted size of the background image */
   background-repeat: no-repeat;
-  background-position: center top; /* Set background image position */
+  background-position: center top;
 }
 
 header h1 {
