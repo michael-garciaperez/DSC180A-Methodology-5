@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Public Sans', sans-serif;
     background-image: url('../images/curtains.jpeg');
@@ -6,28 +5,49 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
+    margin: 0; /* Reset margin to ensure body is centered properly */
+}
+
+div.shell {
+    display: block;
+    width: 670px;
+    margin: 0 auto; /* Center the shell horizontally */
 }
 
 header {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
     max-width: 600px; /* Limit the maximum width of the header */
-    margin: 0 auto; /* Center the header horizontally */
-    text-align: center; /* Center the content inside the header */
+    padding: 0 20px; /* Add padding to the header */
 }
 
-header h1, header h2 {
+header h1 {
     font-family: 'Public Sans', sans-serif;
+    background-color: black;
+    font-size: 2.5em;
     font-weight: 800;
     font-style: normal;
     color: #ece4d8;
+    text-align: center;
     line-height: 1;
-    padding: 14px 20px;
-    background-color: black; /* Add black background */
+    padding: 14px 0; /* Adjust padding to center content vertically */
+    border-width: 10px; 
+    border-image-source: url('../images/clapboard.png'); 
+    border-image-slice: fill;
+    border-image-repeat: repeat;
+}
+
+header h2 {
+    font-family: 'Public Sans', sans-serif;
+    background-color: black;
+    font-size: 1em;
+    font-weight: 800;
+    font-style: normal;
+    color: #ece4d8;
+    text-align: center;
+    line-height: 1;
+    padding: 14px 0; /* Adjust padding to center content vertically */
     border-width: 10px; 
     border-image-source: url('../images/clapboard.png'); 
     border-image-slice: fill;
