@@ -3,25 +3,31 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=640">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>{{ page.title }}</title>
+
+  <!-- Link your CSS files -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen">
   <link rel="stylesheet" href="{{ '/assets/css/mobile.css' | relative_url }}" media="only screen and (max-width:640px)">
   <link rel="stylesheet" href="{{ '/assets/css/non-screen.css' | relative_url }}" media="only screen and (max-width:640px)">
 
+  <!-- Include necessary scripts -->
   <script src="{{ '/assets/js/modernizr.js' | relative_url }}"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="{{ '/assets/js/headsmart.min.js' | relative_url }}"></script>
   <script>
     $(document).ready(function () {
-      $('#main_content').headsmart()
-    })
+      $('#main_content').headsmart();
+    });
   </script>
   
+  <!-- Include custom head content -->
   {% include head-custom.html %}
 </head>
 
 <body>
+  <!-- Header section -->
   <header>
     <div class="ribbon-outer">
       <div class="ribbon-inner">
@@ -29,34 +35,32 @@
       </div>
     </div>
 
-    <h2 style="text-align: center; font-weight: normal; display: flex; flex-direction: column; align-items: center; padding: 20px;">
-      <span style="margin-bottom: 20px; font-weight: bold; font-size: 1.5em;">Authors:</span>
-      <span style="display: flex; justify-content: space-between; width: 100%;">
-        <span style="text-align: center;">Michael Garcia-Perez<br>mig009@ucsd.edu</span>
-        <span style="text-align: center;">Christine Deng<br>cydeng@ucsd.edu</span>
-      </span>
-      <span style="margin-top: 40px; margin-bottom: 20px; font-weight: bold; font-size: 1.5em;">Mentors:</span>
-      <span style="display: flex; justify-content: space-between; width: 100%;">
-        <span style="text-align: center;">Emily Ramond<br>eramond@deloitte.com</span>
-        <span style="text-align: center;">Parker Addison<br>paddison@deloitte.com</span>
-        <span style="text-align: center;">Greg Thein<br>gthein@deloitte.com</span>
-      </span>
-    </h2>
+    <div class="header-content">
+      <h2>Authors:</h2>
+      <p>Michael Garcia-Perez<br>mig009@ucsd.edu</p>
+      <p>Christine Deng<br>cydeng@ucsd.edu</p>
+
+      <h2>Mentors:</h2>
+      <p>Emily Ramond<br>eramond@deloitte.com</p>
+      <p>Parker Addison<br>paddison@deloitte.com</p>
+      <p>Greg Thein<br>gthein@deloitte.com</p>
+    </div>
   </header>
 
+  <!-- Main content section -->
   <div class="shell">
     <section id="main_content">
       {{ content }}
     </section>
 
+    <!-- Footer section -->
     <footer>
-      <span class="ribbon-outer">
-        <span class="ribbon-inner">
-          <p>This project by can be found on <a href="{{ site.github.repository_url }}">GitHub</a>.</p>
-        </span>
-      </span>
+      <div class="ribbon-outer">
+        <div class="ribbon-inner">
+          <p>This project can be found on <a href="{{ site.github.repository_url }}">GitHub</a>.</p>
+        </div>
+      </div>
       <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot.</p>
-      <span class="octocat"></span>
     </footer>
   </div>
 </body>
