@@ -1,4 +1,3 @@
-/* _sass/screen.scss */
 
 body {
     font-family: 'Public Sans', sans-serif;
@@ -17,6 +16,8 @@ body {
 
 header {
     max-width: 600px; /* Limit the maximum width of the header */
+    margin: 0 auto; /* Center the header horizontally */
+    text-align: center; /* Center the content inside the header */
 }
 
 header h1, header h2 {
@@ -24,7 +25,6 @@ header h1, header h2 {
     font-weight: 800;
     font-style: normal;
     color: #ece4d8;
-    text-align: center;
     line-height: 1;
     padding: 14px 20px;
     background-color: black; /* Add black background */
@@ -32,4 +32,15 @@ header h1, header h2 {
     border-image-source: url('../images/clapboard.png'); 
     border-image-slice: fill;
     border-image-repeat: repeat;
+}
+
+/* Additional styles for h2 */
+header h2 span {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+header h2 span:last-child {
+    margin-top: 40px;
 }
