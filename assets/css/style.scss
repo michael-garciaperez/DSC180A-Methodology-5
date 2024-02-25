@@ -7,7 +7,7 @@
 /* STYLES */
 
 body {
-  background-image: url('../assets/images/curtains.jpeg');
+  background-image: url('../images/curtains.jpeg');
   background-size: cover; /* Ensure the background image covers the entire viewport */
   background-position: center; /* Center the background image */
   font-family: 'Public Sans', sans-serif; /* Set the font family to Public Sans */
@@ -41,7 +41,7 @@ header h1 {
   padding: 14px 0; /* Adjust padding to center content vertically */
   background-color: black; /* Add black background */
   border-width: 10px;
-  border-image-source: url('../assets/images/clapboard.png');
+  border-image-source: url('../images/clapboard.png');
   border-image-slice: fill;
   border-image-repeat: repeat;
 }
@@ -56,7 +56,7 @@ header h2 {
   padding: 14px 0; /* Adjust padding to center content vertically */
   background-color: black; /* Add black background */
   border-width: 10px;
-  border-image-source: url('../assets/images/clapboard.png');
+  border-image-source: url('../images/clapboard.png');
   border-image-slice: fill;
   border-image-repeat: repeat;
 }
