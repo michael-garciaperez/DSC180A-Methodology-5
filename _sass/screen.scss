@@ -4,7 +4,8 @@ body {
   background-image: url('../assets/images/curtains.jpeg');
   background-size: cover; /* Ensure the background image covers the entire viewport */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
-  font-family: 'Cinzel', serif; /* Set the font family to Cinzel */
+  font-family: 'Public Sans', sans-serif; /* Set the font family to Public Sans */
+  color: white; /* Set text color to white */
 }
 
 div.shell {
@@ -30,13 +31,13 @@ header h1 {
   font-style: normal;
   color: #ece4d8;
   text-align: center;
-  line-height:1;
+  line-height: 1;
   padding: 14px 20px 0;
 }
 
 header h2 {
   background-color: black;
-  font: bold italic .85em/1.5 'Cinzel', serif; /* Set the font family to Cinzel */
+  font: bold italic .85em/1.5 'Public Sans', sans-serif; /* Set the font family to Public Sans */
   color: #ece4d8;
   padding-bottom: 14px;
   margin-top: -3px;
@@ -46,5 +47,25 @@ header h2 {
 section#main_content {
   z-index: 2;
   padding: 20px 82px 0;
-  min-height:185px;
+  min-height: 185px;
+}
+
+/* Additional styles for h2 */
+header h2 {
+  text-align: center;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header h2 span {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+header h2 span:last-child {
+  margin-top: 40px;
 }
