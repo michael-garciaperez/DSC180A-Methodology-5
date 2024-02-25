@@ -1,9 +1,5 @@
 ---
 ---
-
-//@import 'jekyll-theme-merlot';
-
-
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
 
 /* Setting background image and font */
@@ -15,6 +11,7 @@ body {
     background-repeat: no-repeat;
     color: white;
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,6 +74,5 @@ header h2 span:last-child {
     margin-top: 40px;
     margin-bottom: 0; /* Remove bottom margin for last span */
 }
-
 
 
