@@ -20,7 +20,7 @@ header span.ribbon-inner {
   position: relative;
   display: block;
   background-color: #800000; /* Cinematic shade of red */
-  border: 4px solid #800000;
+  border: none; /* Remove the border or set it to none */
   padding: 2px;
   z-index: 1;
 }
