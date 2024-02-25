@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
 }
 
 /* Centering header and setting max-width */
@@ -35,7 +36,7 @@ header h1 {
     text-align: center;
     line-height: 1;
     padding: 14px 20px 0;
-    background-color: black;
+    background-color: black; /* Add black background */
     border-width: 10px;
     border-image-source: url('../images/clapboard.png');
     border-image-slice: fill;
@@ -51,7 +52,7 @@ header h2 {
     text-align: center;
     line-height: 1;
     padding: 14px 20px 0;
-    background-color: black;
+    background-color: black; /* Add black background */
     border-width: 10px;
     border-image-source: url('../images/clapboard.png');
     border-image-slice: fill;
