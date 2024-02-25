@@ -62,7 +62,10 @@ header h2 span {
   font-size: 1em; /* Adjust font size here */
   margin-bottom: 10px; /* Adjust margin as needed */
   text-align: center; /* Align span elements center */
-  width: 50%; /* Set width to ensure equal distribution */
+}
+
+header h2 span:nth-child(2) {
+  margin-bottom: 20px; /* Increase margin between the two spans */
 }
 
 header h2 span:last-child {
