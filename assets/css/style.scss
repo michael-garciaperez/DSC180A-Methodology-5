@@ -26,7 +26,11 @@ header {
   z-index: 2;
   margin: 0 auto;
   max-width: 600px;
-  padding: 50px 20px 80px 20px; /* Decreased padding-top */
+  padding: 200px 20px 80px; /* Adjusted padding-top */
+  background-image: url('../images/clapboard.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top; /* Set background image position */
 }
 
 header h1 {
@@ -36,10 +40,6 @@ header h1 {
   color: white;
   text-align: center;
   line-height: 1;
-  position: relative;
-  background-image: url('../images/clapboard.png');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 header h2 {
@@ -79,3 +79,4 @@ header h2 span:last-child {
   padding: 10px;
   margin: 10px;
 }
+
