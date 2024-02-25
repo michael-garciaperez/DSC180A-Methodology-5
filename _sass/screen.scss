@@ -79,6 +79,7 @@ header h2 span:last-child {
 }
 
 /* Adjust width for mentor names container */
-.mentor-names {
+.author-mentor-container.mentor-names {
   width: 100%; /* Set the width to 100% */
+  white-space: nowrap; /* Prevent line breaks */
 }
