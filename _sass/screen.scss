@@ -22,38 +22,8 @@ header {
   top: 38px;
 }
 
-header span.ribbon-inner {
-  position: relative;
-  display: block;
-  background-color: #800000; /* Cinematic shade of red */
-  border: none; /* Remove the border or set it to none */
-  padding: 2px;
-  z-index: 1;
-}
-
-header span.left-tail, header span.right-tail {
-  position: relative;
-  display: block;
-  width: 56px;
-  height: 105px;
-  background: transparent url(../images/ribbon-tail-sprite.png) 0 0 no-repeat;
-  position: absolute;
-  bottom: -37px;
-  z-index: 0;
-}
-
-header span.left-tail {
-  background-position: 0 0;
-  left: -31px;
-}
-
-header span.right-tail {
-  background-position: -56px 0;
-  right: -31px;
-}
-
 header h1 {
-  background-color: #800000;
+  background-color: black;
   font-size: 2.5em;
   font-weight: 800;
   font-style: normal;
@@ -64,109 +34,16 @@ header h1 {
 }
 
 header h2 {
-  background-color: #7c334f;
+  background-color: black;
   font: bold italic .85em/1.5 Georgia, Times, “Times New Roman”, serif;
-  color: #e69b95;
+  color: #ece4d8;
   padding-bottom: 14px;
   margin-top: -3px;
   text-align: center;
-}
-
-section#downloads,
-div#no-downloads {
-  position: relative;
-  display: block;
-  height: 197px;
-  width: 550px;
-  padding-bottom: 150px;
-  margin: -80px auto -150px;
-  z-index: 1;
-  background: transparent url(../images/bg-ramp.jpg) center 171px no-repeat;
-}
-
-div#no-downloads span.inner {
-  display: block;
-  position: relative;
-  height: 197px;
-  width: 550px;
-  background: transparent url(../images/download-sprite.png) 0 0 no-repeat;
-}
-
-section#downloads a {
-  display: block;
-  position: relative;
-  height: 67px;
-  width: 275px;
-  padding-top: 130px;
-  background: transparent url(../images/download-sprite.png) 0 0 no-repeat;
-  text-align: center;
-  line-height: 1;
-  color: #fff;
-  font-family: 'Open Sans', Myriad, Calibri, sans-serif;
-  font-weight: 800;
-  font-size: 1.3em;
-}
-
-section#downloads a:hover {
-  text-decoration: none;
-}
-
-section#downloads a em {
-  font: bold italic 12px/1 Georgia, Times, “Times New Roman”, serif;
-  color: #83b7da;
-  display: block;
-}
-
-section#downloads a.zip {
-  float: left;
-  background-position: 0 0;
-}
-
-section#downloads a.tgz {
-  float: right;
-  background-position: -275px 0;
-}
-
-section#downloads a.zip:hover {
-  background-position: 0 -197px;
-}
-
-section#downloads a.tgz:hover {
-  background-position: -275px -197px;
-}
-
-span.banner-fix {
-  background: transparent url(../images/download-fallback-bg.png) center top no-repeat;
-  display: block;
-  height: 19px;
-  position: absolute;
-  width: 670px;
-  top: 19px;
 }
 
 section#main_content {
   z-index: 2;
   padding: 20px 82px 0;
   min-height:185px;
-}
-
-/* footer */
-
-footer {
-  background: transparent url(../images/footer-ramp.jpg) center -1px no-repeat;
-  padding-top: 104px;
-  margin: -94px auto 40px;
-  max-width: 560px;
-  text-align: center;
-}
-
-footer span.ribbon-outer {
-  display: block;
-  position: relative;
-  border-bottom: 2px solid #800000;
-}
-
-footer span.ribbon-inner {
-  position: relative;
-  display: block;
 }
