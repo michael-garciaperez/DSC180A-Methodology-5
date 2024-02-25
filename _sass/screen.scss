@@ -78,8 +78,8 @@ header h2 span:last-child {
   margin: 10px;
 }
 
-/* Adjust width for mentor names container */
+/* Use flexbox to ensure all mentor names are on the same line */
 .author-mentor-container.mentor-names {
-  width: 100%; /* Set the width to 100% */
-  white-space: nowrap; /* Prevent line breaks */
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping to next line */
 }
