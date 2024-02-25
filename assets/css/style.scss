@@ -6,67 +6,68 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
 
-/* Setting background image and font */
+/* Resetting default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Applying font and background settings */
 body {
-    font-family: 'Public Sans', sans-serif;
-    background-image: url('../images/curtains.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
+  font-family: 'Public Sans', sans-serif;
+  background-image: url('../images/curtains.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }
 
-/* Centering header and setting max-width */
+/* Centering the header and limiting its width */
 header {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Styling h1 */
+/* Styling the header h1 */
 header h1 {
-    font-size: 2.5em;
-    font-weight: 800;
-    font-style: normal;
-    color: #ece4d8;
-    text-align: center;
-    line-height: 1;
-    padding: 14px 20px 0;
-    background-color: black; /* Add black background */
-    border-width: 10px;
-    border-image-source: url('../images/clapboard.png');
-    border-image-slice: fill;
-    border-image-repeat: repeat;
+  font-size: 2.5em;
+  font-weight: 800;
+  color: #ece4d8;
+  padding: 10px;
+  background-color: black;
+  border: 10px solid transparent;
+  border-image-source: url('../images/clapboard.png');
+  border-image-slice: fill;
+  border-image-repeat: repeat;
 }
 
-/* Styling h2 */
+/* Styling the header h2 */
 header h2 {
-    font-size: 1em;
-    font-weight: 800;
-    font-style: normal;
-    color: #ece4d8;
-    text-align: center;
-    line-height: 1;
-    padding: 14px 20px 0;
-    background-color: black; /* Add black background */
-    border-width: 10px;
-    border-image-source: url('../images/clapboard.png');
-    border-image-slice: fill;
-    border-image-repeat: repeat;
+  font-size: 1em;
+  font-weight: 800;
+  color: #ece4d8;
+  margin-top: 20px;
 }
 
-/* Additional styles for h2 */
-header h2 span {
-    font-weight: bold;
-    font-size: 1.5em;
-    margin-bottom: 20px;
+/* Styling the content within the header */
+.header-content {
+  text-align: left;
 }
 
-header h2 span:last-child {
-    margin-top: 40px;
+/* Styling the footer */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Styling the footer p elements */
+footer p {
+  margin-bottom: 10px;
+}
+
+/* Styling the footer a element */
+footer a {
+  color: #ece4d8;
 }
