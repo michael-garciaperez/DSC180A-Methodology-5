@@ -20,17 +20,22 @@ header {
 
 /* Style for author and mentor containers */
 .author-mentor-container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 /* Style for author and mentor names */
+.author-mentor-container div {
+    text-align: center;
+    margin: 0 10px;
+}
+
 .author-mentor-container p {
-    display: inline-block; /* Display names inline-block */
     background-color: black;
     padding: 10px;
-    margin: 5px; /* Adjust margin for spacing */
-    border-radius: 5px; /* Add border-radius for rounded corners */
-    color: #ece4d8; /* Set text color to white */
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #ece4d8;
 }
 
 /* Styling h1 */
@@ -58,7 +63,7 @@ header h2 {
     padding: 14px 0; /* Adjust padding to center content vertically */
     background-color: black; /* Add black background */
     border-width: 10px;
-    border-image-source: url('/assets/images/clapboard.png');
+    border-image-source: url('../images/clapboard.png');
     border-image-slice: fill;
     border-image-repeat: repeat;
 }
