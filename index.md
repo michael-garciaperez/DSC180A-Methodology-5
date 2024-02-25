@@ -2,10 +2,7 @@
 layout: default
 title: "Mitigating Director Gender Bias in Movie Recommender Systems"
 ---
-
-# Mitigating Director Gender Bias in Movie Recommender Systems
-
-## Authors
+# Authors
 <small>Michael Garcia-Perez (mig009@ucsd.edu), Christine Deng (cydeng@ucsd.edu)</small>
 
 ## Table of Contents
