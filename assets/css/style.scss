@@ -51,6 +51,7 @@ header h1:before {
   background-image: url('../images/clapboard.png');
   background-size: cover; /* Ensure the entire background image covers the pseudo-element */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-position: center; /* Center the background image vertically */
   opacity: 0.5; /* Adjust opacity to control the visibility of the background */
   z-index: -1;
 }
@@ -92,4 +93,3 @@ header h2 span:last-child {
   padding: 10px;
   margin: 10px;
 }
-
