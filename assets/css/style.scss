@@ -5,20 +5,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
 
-/* Setting background image */
+/* Setting background image and font */
 body {
     font-family: 'Public Sans', sans-serif;
     background-image: url('../images/curtains.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
     color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Centering header and setting max-width */
+header {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Styling h1 */
 header h1 {
-    font-family: 'Public Sans', sans-serif;
-    background-color: black;
     font-size: 2.5em;
     font-weight: 800;
     font-style: normal;
@@ -26,16 +35,15 @@ header h1 {
     text-align: center;
     line-height: 1;
     padding: 14px 20px 0;
-    
-    border-width: 10px; 
-    border-image-source: url('../images/clapboard.png'); 
-    border-image-slice: fill; /* Make sure the entire image is used as the border */
-    border-image-repeat: repeat; /* Repeat the border image */
+    background-color: black;
+    border-width: 10px;
+    border-image-source: url('../images/clapboard.png');
+    border-image-slice: fill;
+    border-image-repeat: repeat;
 }
 
+/* Styling h2 */
 header h2 {
-    font-family: 'Public Sans', sans-serif;
-    background-color: black;
     font-size: 1em;
     font-weight: 800;
     font-style: normal;
@@ -43,10 +51,21 @@ header h2 {
     text-align: center;
     line-height: 1;
     padding: 14px 20px 0;
-
-    border-width: 10px; 
-    border-image-source: url('../images/clapboard.png'); 
-    border-image-slice: fill; /* Make sure the entire image is used as the border */
-    border-image-repeat: repeat; /* Repeat the border image */
-
+    background-color: black;
+    border-width: 10px;
+    border-image-source: url('../images/clapboard.png');
+    border-image-slice: fill;
+    border-image-repeat: repeat;
 }
+
+/* Additional styles for h2 */
+header h2 span {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+header h2 span:last-child {
+    margin-top: 40px;
+}
+
