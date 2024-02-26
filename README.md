@@ -113,6 +113,6 @@ Remember to regularly update your packages to get the latest features and bug fi
 
    - If you encounter issues related to Jupyter Lab, ensure that you have launched it from within the conda environment where you installed the project dependencies.
 
-   - The website for this can be found [here](https://michael-garciaperez.github.io/DSC180B-Capstone-Project/).
+   - The website for this project can be found [here](https://michael-garciaperez.github.io/DSC180B-Capstone-Project/).
   
 Happy coding!
