@@ -6,6 +6,7 @@
   width: 100%; /* Full width */
   top: 0; /* Stick to the top */
   padding: 10px 0; /* Add padding */
+  z-index: 1000; /* Ensure it appears above other content */
 }
 
 .toc {
