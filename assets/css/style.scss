@@ -1,7 +1,5 @@
 ---
 ---
-
-
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
 
 /* STYLES */
@@ -37,8 +35,7 @@ header {
 
 header h1 {
   font-size: 2em;
-  font-weight: 800;
-  font-weight: bold;
+  font-weight: bold; /* Set font weight to bold */
   font-style: normal;
   color: #f0ede5;
   text-align: center;
@@ -80,3 +77,4 @@ header h2 span:last-child {
   padding: 10px;
   margin: 10px;
 }
+
