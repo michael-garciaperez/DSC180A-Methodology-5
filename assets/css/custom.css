@@ -30,14 +30,20 @@
   text-decoration: underline; /* Add underline on hover */
 }
 
-header {
-  position: relative;
-  z-index: 0; /* Lower z-index to ensure it appears behind top bar */
-  margin: 0 auto;
-  max-width: 670px; /* Adjusted maximum width */
-  padding: 175px 40px 25px;
-  background-image: url('../images/board.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center top;
+.buttons {
+  text-align: center; /* Center align the buttons */
+  margin-top: 20px; /* Add some margin from the top */
+}
+
+.buttons a {
+  display: inline-block; /* Display buttons inline */
+  margin: 0 10px; /* Add spacing between buttons */
+  padding: 10px 20px; /* Add padding */
+  background-color: black; /* Black background */
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.buttons a:hover {
+  background-color: #333; /* Darken background on hover */
 }
