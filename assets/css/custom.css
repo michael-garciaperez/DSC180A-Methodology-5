@@ -1,0 +1,30 @@
+/* Custom CSS styles */
+
+.top-bar {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+  position: fixed; /* Fixed position */
+  width: 100%; /* Full width */
+  top: 0; /* Stick to the top */
+  padding: 10px 0; /* Add padding */
+}
+
+.toc {
+  list-style-type: none; /* Remove bullets */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  text-align: center; /* Center align the list */
+}
+
+.toc li {
+  display: inline-block; /* Display horizontally */
+  margin: 0 10px; /* Add spacing between items */
+}
+
+.toc li a {
+  color: white; /* Set text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.toc li a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
