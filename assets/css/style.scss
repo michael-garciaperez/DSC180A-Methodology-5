@@ -79,26 +79,8 @@ header h2 span:last-child {
   margin: 10px;
 }
 
-/* Table of Contents */
-#toc_container {
-  background-color: black;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
-#toc_container a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold; /* Added font weight */
-}
-
-#toc_container a:hover {
-  text-decoration: underline;
-}
-
-/* Button Styles */
+/* CSS styles */
+/* Buttons */
 .buttons {
   text-align: center;
   margin-bottom: 20px;
@@ -106,16 +88,35 @@ header h2 span:last-child {
 
 .buttons a {
   display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
   background-color: black;
   color: white;
-  padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
-  margin: 0 10px;
 }
 
 .buttons a:hover {
   background-color: #333;
 }
+
+/* Table of Contents */
+#main_content ul {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#main_content ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#main_content ul li a:hover {
+  text-decoration: underline;
+}
+
 
 
