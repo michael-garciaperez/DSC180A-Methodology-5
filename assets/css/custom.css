@@ -26,6 +26,15 @@
   text-decoration: none; /* Remove underline */
 }
 
+ul.toc {
+  text-align: center;
+}
+
+ul.toc li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
 .toc li a:hover {
   text-decoration: underline; /* Add underline on hover */
 }
