@@ -1,5 +1,6 @@
 /* Custom CSS styles */
 
+/* Top bar */
 .top-bar {
   background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
   position: fixed; /* Fixed position */
@@ -9,6 +10,7 @@
   z-index: 1000; /* Ensure it appears above other content */
 }
 
+/* Table of Contents */
 .toc {
   list-style-type: none; /* Remove bullets */
   margin: 0; /* Remove default margin */
@@ -26,19 +28,11 @@
   text-decoration: none; /* Remove underline */
 }
 
-ul.toc {
-  text-align: center;
-}
-
-ul.toc li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
 .toc li a:hover {
   text-decoration: underline; /* Add underline on hover */
 }
 
+/* Buttons */
 .buttons {
   text-align: center; /* Center align the buttons */
   margin-top: 20px; /* Adjust top margin */
@@ -51,8 +45,30 @@ ul.toc li {
   background-color: black; /* Black background */
   color: white; /* White text color */
   text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
 }
 
 .buttons a:hover {
   background-color: #333; /* Darken background on hover */
+}
+
+/* Section Headers */
+.header-level-1 {
+  text-align: center;
+  background-color: black; /* Add a black background */
+  color: white; /* Change text color to white */
+  padding: 10px; /* Add padding to create space */
+  margin-bottom: 20px; /* Increase spacing between headers and content below */
+}
+
+/* Transparent black box behind content */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+  z-index: -1; /* Place it behind other content */
 }
