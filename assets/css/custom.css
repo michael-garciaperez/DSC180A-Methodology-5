@@ -32,7 +32,7 @@
 
 header {
   position: relative;
-  z-index: 1; /* Ensure header is behind top bar */
+  z-index: 0; /* Lower z-index to ensure it appears behind top bar */
   margin: 0 auto;
   max-width: 670px; /* Adjusted maximum width */
   padding: 175px 40px 25px;
