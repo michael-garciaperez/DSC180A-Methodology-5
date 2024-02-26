@@ -64,7 +64,7 @@
 /* Transparent black box behind content */
 body::before {
   content: "";
-  position: absolute; /* Change position to absolute */
+  position: fixed; /* Change position to fixed */
   top: 0;
   left: 0;
   width: 100%;
@@ -72,4 +72,5 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
   z-index: -1; /* Place it behind other content */
 }
+
 
