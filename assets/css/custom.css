@@ -68,11 +68,10 @@ body::before {
   top: 0;
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Center horizontally */
-  width: 90%; /* Adjust the width */
-  max-width: 670px; /* Limit the maximum width */
+  width: 80%; /* Adjust the width */
+  max-width: 600px; /* Limit the maximum width */
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Adjust opacity */
+  background-color: rgba(0, 0, 0, 0.9); /* Darken the background */
   z-index: -1; /* Place it behind other content */
 }
-
 
