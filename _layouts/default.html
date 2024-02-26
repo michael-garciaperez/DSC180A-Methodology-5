@@ -1,8 +1,3 @@
----
-layout: default
-title: "Mitigating Director Gender Bias in Movie Recommender Systems"
----
-
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 <head>
@@ -13,40 +8,6 @@ title: "Mitigating Director Gender Bias in Movie Recommender Systems"
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen">
   <link rel="stylesheet" href="{{ '/assets/css/mobile.css' | relative_url }}" media="only screen and (max-width:640px)">
   <link rel="stylesheet" href="{{ '/assets/css/non-screen.css' | relative_url }}" media="only screen and (max-width:640px)">
-
-  <style>
-    body {
-      display: flex;
-      flex-direction: row;
-    }
-
-    #toc {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 250px;
-      height: 100%;
-      overflow-y: auto;
-      padding: 20px;
-      background-color: #f2f2f2;
-    }
-
-    #content {
-      margin-left: 280px; /* Adjust margin to accommodate the width of TOC */
-      padding: 20px;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        flex-direction: column;
-      }
-
-      #toc, #content {
-        width: auto;
-        margin-left: 0;
-      }
-    }
-  </style>
 
   <script src="{{ '/assets/js/modernizr.js' | relative_url }}"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -61,29 +22,24 @@ title: "Mitigating Director Gender Bias in Movie Recommender Systems"
 </head>
 
 <body>
-  <div id="toc">
-    <h2>Table of Contents</h2>
-    <nav>
-      <ol>
-        <li><a href="#1-introduction">Introduction</a></li>
-        <li><a href="#2-exploratory-data-analysis">Exploratory Data Analysis</a></li>
-        <li><a href="#3-model-development--evaluation">Model Development & Evaluation</a></li>
-        <li><a href="#4-bias-mitigation">Bias Mitigation</a></li>
-        <li><a href="#5-results-summary">Results Summary</a></li>
-        <li><a href="#6-conclusion--discussion">Conclusion & Discussion</a></li>
-      </ol>
-    </nav>
-  </div>
-
-  <div id="content">
-    <header>
-      <div class="ribbon-outer">
-        <div class="ribbon-inner">
-          <h1>{{ page.title }}</h1>
-        </div>
+  <header>
+    <div class="ribbon-outer">
+      <div class="ribbon-inner">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
       </div>
-    </header>
+    </div>
 
+    <div class="author-mentor-container">
+      <h2>AUTHORS:</h2>
+      <p>Michael Garcia-Perez<br>mig009@ucsd.edu</p>
+      <p>Christine Deng<br>cydeng@ucsd.edu</p>
+      <p>MENTOR: Emily Ramond<br>eramond@deloitte.com</p>
+      <p>MENTOR: Parker Addison<br>paddison@deloitte.com</p>
+      <p>MENTOR: Greg Thein<br>gthein@deloitte.com</p>
+    </div>
+  </header>
+
+  <div class="shell">
     <section id="main_content">
       {{ content }}
     </section>
