@@ -1,6 +1,7 @@
 ---
 ---
 
+
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
 
 /* STYLES */
@@ -27,7 +28,7 @@ header {
   z-index: 2;
   margin: 0 auto;
   max-width: 670px; /* Adjusted maximum width */
-  padding: 175px 40px 25px; 
+  padding: 175px 40px 25px;
   background-image: url('../images/clapboard.png');
   background-size: 100%;
   background-repeat: no-repeat;
@@ -35,14 +36,15 @@ header {
 }
 
 header h1 {
-  font-size: 2em; 
-  font-weight: bold; 
+  font-size: 2em;
+  font-weight: 800;
+  font-weight: bold;
   font-style: normal;
-  color: #f0ede5; 
+  color: #f0ede5;
   text-align: center;
   line-height: 1;
   background-color: black;
-  padding: 10px 20px; 
+  padding: 10px 20px;
 }
 
 header h2 {
@@ -79,3 +81,7 @@ header h2 span:last-child {
   margin: 10px;
 }
 
+.author-mentor-container p:nth-child(2) {
+  margin-right: 20px; /* Increase margin to the right */
+  padding: 15px 20px; /* Increase padding for top and bottom */
+}
