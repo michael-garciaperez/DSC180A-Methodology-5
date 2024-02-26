@@ -19,10 +19,6 @@ Your model development content goes here.
 
 Your content goes here.
 
-## Results Summary
-
-Your results summary content goes here.
-
-## Conclusion & Discussion
+## Conclusion & Results
 
 Your conclusion and discussion content goes here.
