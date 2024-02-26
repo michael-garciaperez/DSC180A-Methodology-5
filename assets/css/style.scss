@@ -27,7 +27,7 @@ header {
   margin: 0 auto;
   max-width: 670px; /* Adjusted maximum width */
   padding: 175px 40px 25px;
-  background-image: url('../images/board.png');
+  background-image: url('../images/clapboard.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center top;
@@ -98,12 +98,12 @@ header h2 span:last-child {
 }
 
 /* Button Styles */
-.button-container {
+.buttons {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.button-container a {
+.buttons a {
   display: inline-block;
   background-color: black;
   color: white;
@@ -113,7 +113,7 @@ header h2 span:last-child {
   margin: 0 10px;
 }
 
-.button-container a:hover {
+.buttons a:hover {
   background-color: #333;
 }
 
