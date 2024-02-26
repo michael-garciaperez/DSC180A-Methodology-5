@@ -7,9 +7,9 @@ title: "Mitigating Director Gender Bias in Movie Recommender Systems"
 
 Your introduction content goes here.
 
-## Exploratory Data Analysis
+## Methods
 
-Your exploratory data analysis content goes here.
+Your methods content goes here.
 
 ## Model Development & Evaluation
 
