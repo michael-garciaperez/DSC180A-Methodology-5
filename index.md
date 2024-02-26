@@ -3,15 +3,12 @@ layout: default
 title: "Mitigating Director Gender Bias in Movie Recommender Systems"
 ---
 
-## Table of Contents
-To return to the table of contents, click on the number at any major section heading.
-
-1. [Introduction](#introduction)
-2. [Exploratory Data Analysis](#exploratory-data-analysis)
-3. [Model Development & Evaluation](#model-development--evaluation)
-4. [Bias Mitigation](#bias-mitigation)
-5. [Results Summary](#results-summary)
-6. [Conclusion & Discussion](#conclusion--discussion)
+- [Introduction](#introduction)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Model Development & Evaluation](#model-development--evaluation)
+- [Bias Mitigation](#bias-mitigation)
+- [Results Summary](#results-summary)
+- [Conclusion & Discussion](#conclusion--discussion)
 
 ## Introduction
 
