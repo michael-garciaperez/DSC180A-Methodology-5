@@ -29,3 +29,15 @@
 .toc li a:hover {
   text-decoration: underline; /* Add underline on hover */
 }
+
+header {
+  position: relative;
+  z-index: 1; /* Ensure header is behind top bar */
+  margin: 0 auto;
+  max-width: 670px; /* Adjusted maximum width */
+  padding: 175px 40px 25px;
+  background-image: url('../images/clapboard.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
