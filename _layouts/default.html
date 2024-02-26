@@ -1,60 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: "en-US" }}">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vertical Image Behind Text and Header</title>
-  <style>
-    body {
-      background-image: url('background.jpg');
-      background-size: cover;
-      background-position: center;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    header {
-      position: relative;
-      text-align: center;
-      color: white;
-      padding: 100px 0;
-    }
+  <title>{{ page.title }}</title>
 
-    h1 {
-      font-size: 2em;
-    }
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen">
+  <link rel="stylesheet" href="{{ '/assets/css/mobile.css' | relative_url }}" media="only screen and (max-width:640px)">
+  <link rel="stylesheet" href="{{ '/assets/css/non-screen.css' | relative_url }}" media="only screen and (max-width:640px)">
 
-    .vertical-image {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 1;
-      pointer-events: none;
-    }
-
-    .vertical-image img {
-      width: 100%;
-      height: auto;
-      transform: rotate(-90deg);
-    }
-
-    .content {
-      padding: 20px;
-      color: white;
-    }
-  </style>
+  <script src="{{ '/assets/js/modernizr.js' | relative_url }}"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="{{ '/assets/js/headsmart.min.js' | relative_url }}"></script>
+  <script>
+    $(document).ready(function () {
+      $('#main_content').headsmart()
+    })
+  </script>
+  
+  {% include head-custom.html %}
 </head>
+
 <body>
-  <header>
-    <h1>Header Text</h1>
-    <div class="vertical-image">
-      <img src="film.png" alt="Vertical Image">
+  <header style="background-image: url('../images/film.png');">
+    <div class="ribbon-outer">
+      <div class="ribbon-inner">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+      </div>
+    </div>
+
+    <div class="author-mentor-container">
+      <h2 style="font-size: 1.25em; margin-bottom: -10px;">AUTHORS:</h2>
+      <p style="font-size: 1.25em;">Michael Garcia-Perez<br>mig009@ucsd.edu</p>
+      <p style="font-size: 1.25em;">Christine Deng<br>cydeng@ucsd.edu</p>
+      <p style="font-size: 1em;">MENTOR: Emily Ramond<br>eramond@deloitte.com</p>
+      <p style="font-size: 1em;">MENTOR: Parker Addison<br>paddison@deloitte.com</p>
+      <p style="font-size: 1em;">MENTOR: Greg Thein<br>gthein@deloitte.com</p>
     </div>
   </header>
-  <div class="content">
-    <p>This is the main content where your text goes.</p>
+
+  <div class="buttons">
+    <a href="https://github.com/your-username/your-repo" class="button">GitHub Repo</a>
+    <a href="https://drive.google.com/drive/folders/your-folder-id" class="button">Google Drive</a>
+  </div>
+
+  <div class="shell">
+    <section id="main_content">
+      {{ content }}
+    </section>
+
+    <footer>
+      <span class="ribbon-outer">
+        <span class="ribbon-inner">
+          <p>This project by can be found on <a href="{{ site.github.repository_url }}">GitHub</a>.</p>
+        </span>
+      </span>
+      <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot.</p>
+      <span class="octocat"></span>
+    </footer>
   </div>
 </body>
 </html>
