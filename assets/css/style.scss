@@ -27,22 +27,23 @@ header {
   z-index: 2;
   margin: 0 auto;
   max-width: 670px; /* Adjusted maximum width */
-  padding: 175px 40px 25px; /* Adjusted padding */
+  padding: 175px 40px 25px; 
   background-image: url('../images/clapboard.png');
-  background-size: 100%; /* Adjusted size of the background image */
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center top;
 }
 
 header h1 {
-  font-size: 2em; /* Adjusted font size */
+  font-size: 2em; 
   font-weight: 800;
+  font-weight: bold; 
   font-style: normal;
-  color: #f0ede5; /* Adjusted color for cream */
+  color: #f0ede5; 
   text-align: center;
   line-height: 1;
-  background-color: black; /* Added black background */
-  padding: 10px 20px; /* Adjusted padding */
+  background-color: black;
+  padding: 10px 20px; 
 }
 
 header h2 {
