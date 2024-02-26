@@ -13,26 +13,26 @@ To return to the table of contents, click on the number at any major section hea
 5. [Results Summary](#5-results-summary)
 6. [Conclusion & Discussion](#6-conclusion--discussion)
 
-## Introduction
+## 1. Introduction
 
 Your introduction content goes here.
 
-## Exploratory Data Analysis
+## 2. Exploratory Data Analysis
 
 Your exploratory data analysis content goes here.
 
-## Model Development & Evaluation
+## 3. Model Development & Evaluation
 
 Your model development content goes here.
 
-## Bias Mitigation
+## 4. Bias Mitigation
 
 Your content goes here.
 
-## Results Summary
+## 5. Results Summary
 
 Your results summary content goes here.
 
-## Conclusion & Discussion
+## 6. Conclusion & Discussion
 
 Your conclusion and discussion content goes here.
