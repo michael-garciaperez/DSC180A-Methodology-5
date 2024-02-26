@@ -91,6 +91,7 @@ header h2 span:last-child {
 #toc_container a {
   color: white;
   text-decoration: none;
+  font-weight: bold; /* Added font weight */
 }
 
 #toc_container a:hover {
