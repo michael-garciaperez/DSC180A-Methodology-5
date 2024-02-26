@@ -120,6 +120,10 @@ header h2 span:last-child {
 
 .header-level-1 {
   text-align: center;
+  background-color: black; /* Add a black background */
+  color: white; /* Change text color to white */
+  padding: 10px; /* Add padding to create space */
+  margin-bottom: 20px; /* Increase spacing between headers and content below */
 }
 
 
