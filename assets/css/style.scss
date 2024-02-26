@@ -27,7 +27,7 @@ header {
   margin: 0 auto;
   max-width: 670px; /* Adjusted maximum width */
   padding: 175px 40px 25px;
-  background-image: url('../images/board.png');
+  background-image: url('../images/clapboard.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center top;
@@ -79,26 +79,6 @@ header h2 span:last-child {
   margin: 10px;
 }
 
-/* Button styles */
-.buttons {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.buttons a {
-  display: inline-block;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  margin: 0 10px;
-  border-radius: 5px;
-}
-
-.buttons a:hover {
-  background-color: #333;
-}
-
 /* Table of Contents */
 #toc_container {
   background-color: black;
@@ -115,6 +95,26 @@ header h2 span:last-child {
 
 #toc_container a:hover {
   text-decoration: underline;
+}
+
+/* Button Styles */
+.button-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button-container a {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.button-container a:hover {
+  background-color: #333;
 }
 
 
