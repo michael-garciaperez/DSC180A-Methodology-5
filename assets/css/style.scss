@@ -1,5 +1,6 @@
 ---
 ---
+
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
 
 /* STYLES */
@@ -26,11 +27,11 @@ header {
   z-index: 2;
   margin: 0 auto;
   max-width: 670px; /* Adjusted maximum width */
-  padding: 150px 40px 25px; /* Decreased top padding to move the text back up */
+  padding: 150px 40px 25px; /* Decreased top padding to move the image up more */
   background-image: url('../images/clap_board.png');
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center 200px; /* Adjusted background position */
+  background-position: center top; /* Adjusted background position */
 }
 
 header h1 {
@@ -153,4 +154,3 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
   z-index: -1; /* Place it behind other content */
 }
-
