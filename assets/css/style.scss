@@ -11,7 +11,7 @@ body {
   font-family: 'Public Sans', sans-serif;
   color: white;
   margin: 0;
-  padding-top: 200px; /* Adjusted padding-top to shift content down */
+  padding-top: 50px; /* Adjusted padding-top to move everything up */
 }
 
 div.shell {
@@ -27,7 +27,7 @@ header {
   z-index: 2;
   margin: 0 auto;
   max-width: 670px; /* Adjusted maximum width */
-  padding: 100px 40px 25px; /* Adjusted padding to match the body padding */
+  padding: 50px 40px 25px; /* Adjusted padding to match the body padding */
   background-image: url('../images/clap_board.png');
   background-size: 100%;
   background-repeat: no-repeat;
