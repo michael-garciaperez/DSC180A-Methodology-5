@@ -19,12 +19,14 @@ div.shell {
   margin: 0 auto;
 }
 
+/* header */
+
 header {
   position: relative;
   z-index: 2;
   margin: 0 auto;
   max-width: 670px; /* Adjusted maximum width */
-  padding: 250px 40px 25px; /* Increased top padding to move the picture down */
+  padding: 250px 40px 25px; /* Increased top padding to shift everything down */
   background-image: url('../images/clap_board.png');
   background-size: 100%;
   background-repeat: no-repeat;
@@ -68,7 +70,6 @@ header h2 span:last-child {
 /* Style for author and mentor names */
 .author-mentor-container {
   text-align: center;
-  margin-top: 50px; /* Adjusted margin to move the text down */
 }
 
 .author-mentor-container p {
