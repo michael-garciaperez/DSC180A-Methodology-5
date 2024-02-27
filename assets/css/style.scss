@@ -26,7 +26,7 @@ header {
   z-index: 2;
   margin: 0 auto;
   max-width: 670px; /* Adjusted maximum width */
-  padding: 400px 40px 25px; /* Increased top padding to shift everything down more */
+  padding: 250px 40px 25px; /* Decreased top padding to move the text back up */
   background-image: url('../images/clap_board.png');
   background-size: 100%;
   background-repeat: no-repeat;
@@ -153,3 +153,4 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
   z-index: -1; /* Place it behind other content */
 }
+
