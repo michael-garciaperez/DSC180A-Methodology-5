@@ -20,14 +20,24 @@ div.shell {
   margin: 0 auto;
 }
 
+/* Top bar */
+.top-bar {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+  position: fixed; /* Fixed position */
+  width: 100%; /* Full width */
+  top: 0; /* Stick to the top */
+  padding: 20px 0; /* Add padding */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
 /* header */
 
 header {
   position: relative;
   z-index: 2;
-  margin: 0 auto;
+  margin: 70px auto 0; /* Adjusted margin to create space between top bar and header */
   max-width: 670px; /* Adjusted maximum width */
-  padding: 50px 40px 25px; /* Decreased top padding to move the image up more */
+  padding: 20px 40px 25px; /* Adjusted padding to move the image up more */
   background-image: url('../images/clap_board.png');
   background-size: contain; /* Adjusted background size */
   background-repeat: no-repeat;
@@ -37,7 +47,6 @@ header {
 header h1 {
   font-size: 2em;
   font-weight: 800;
-  font-weight: bold;
   font-style: normal;
   color: white;
   text-align: center;
