@@ -57,7 +57,7 @@
   text-align: center;
   background-color: black; /* Add a black background */
   color: white; /* Change text color to white */
-  padding: 10px; /* Add padding to create space */
+  padding: 100px 20px 25px; /* Adjusted padding */
   margin-bottom: 20px; /* Increase spacing between headers and content below */
 }
 
@@ -72,4 +72,3 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
   z-index: -1; /* Place it behind other content */
 }
-
