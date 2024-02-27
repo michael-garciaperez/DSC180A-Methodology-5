@@ -29,10 +29,11 @@ header {
   max-width: 670px; /* Adjusted maximum width */
   padding: 20px 40px 25px; /* Adjusted padding to move the image up more */
   background-image: url('../images/clap_board.png');
-  background-size: contain; /* Adjusted background size */
+  background-size: cover; /* Adjusted background size */
   background-repeat: no-repeat;
   background-position: center top; /* Adjusted background position */
 }
+
 
 
 
