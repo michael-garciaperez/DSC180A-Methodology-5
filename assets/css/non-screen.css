@@ -35,8 +35,12 @@ header span.right-tail {
 }
 
 header h1 {
-  font-family: 'Public Sans', sans-serif; 
-  font-size: 2em;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+.author-mentor-container p {
+  font-size: 1em;
 }
 
 section#downloads {
@@ -84,7 +88,7 @@ footer span.right-tail {
 }
 
 footer p {
-  font-family: 'Public Sans', sans-serif; 
+  font-family: 'Public Sans', sans-serif;
   font-size: .6em;
 }
 
@@ -94,7 +98,7 @@ footer span.ribbon-inner {
 }
 
 footer span.ribbon-inner p {
-  font-family: 'Public Sans', sans-serif; 
+  font-family: 'Public Sans', sans-serif;
   font-size: 22px;
   height: auto;
   line-height: 1.1;
@@ -102,7 +106,7 @@ footer span.ribbon-inner p {
 }
 
 footer span.ribbon-inner a {
-  font-family: 'Public Sans', sans-serif; 
+  font-family: 'Public Sans', sans-serif;
   font-size: 38px;
   display: block;
   bottom: 0;
@@ -117,7 +121,7 @@ footer span.octocat {
 }
 
 body {
-  font-family: 'Public Sans', sans-serif; 
+  font-family: 'Public Sans', sans-serif;
   font: normal normal 30px/1.5 Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
 }
 
@@ -161,27 +165,31 @@ hr {
 
 @media only screen and (max-width: 640px) {
   div.shell {
-    width: 100%; 
+    width: 100%;
   }
 
   header {
-    max-width: 100%; 
+    max-width: 100%;
     top: 0;
   }
 
   header span.left-tail,
   header span.right-tail {
-    display: none; 
+    display: none;
   }
 
   header h1 {
     font-size: 1.5em;
   }
 
+  .author-mentor-container p {
+    font-size: 1em;
+  }
+
   section#downloads {
-    height: auto; 
-    margin: 20px auto; 
-    width: 90%; 
+    height: auto;
+    margin: 20px auto;
+    width: 90%;
   }
 
   section#downloads a {
@@ -189,15 +197,15 @@ hr {
   }
 
   span.banner-fix {
-    display: none; 
+    display: none;
   }
 
   section#main_content {
-    padding: 20px; 
+    padding: 20px;
   }
 
   footer {
-    max-width: 100%; 
+    max-width: 100%;
   }
 
   footer span.left-tail,
@@ -206,4 +214,6 @@ hr {
   }
 
   footer p {
-    font-size: .8
+    font-size: .8em;
+  }
+}
