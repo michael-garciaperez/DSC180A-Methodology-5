@@ -32,7 +32,6 @@ body {
   background-position: center; 
 }
 
-
 @media only screen and (max-width: 640px) {
   div.shell {
     width: 100%;
@@ -40,7 +39,7 @@ body {
 
   header {
     max-width: 100%;
-    top: 0;
+    top: 71px; 
   }
 
   header span.left-tail,
