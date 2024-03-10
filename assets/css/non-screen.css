@@ -27,7 +27,7 @@ header h1 {
 }
 
 body {
-  background: transparent;
+  background: transparent !important;
 }
 
 
