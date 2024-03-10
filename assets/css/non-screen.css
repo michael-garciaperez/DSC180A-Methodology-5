@@ -27,7 +27,7 @@ header h1 {
 }
 
 body {
-  background: none;
+  background: transparent;
 }
 
 
@@ -52,6 +52,6 @@ body {
 
   .author-mentor-container p {
     font-size: 1em;
-    margin: 5px 0 !important;
+    margin: 2px 0 !important;
   }
 }
