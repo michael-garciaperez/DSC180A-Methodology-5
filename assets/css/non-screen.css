@@ -27,7 +27,9 @@ header h1 {
 }
 
 body {
-  background: transparent !important;
+  background-image: url('../images/curtains.jpeg');
+  background-size: cover; 
+  background-position: center; 
 }
 
 
