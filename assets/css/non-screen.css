@@ -7,10 +7,17 @@ div.shell {
 }
 
 header {
-  max-width: 640px;
-  margin: 0;
-  top: 51px;
+  position: relative;
+  z-index: 2;
+  margin: 70px auto 0;
+  max-width: 100%;
+  padding: 20px 40px 25px;
+  background-image: url('../images/clap_board.png');
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center top;
 }
+
 
 header span.ribbon-inner {
   border: 8px solid #800000;
