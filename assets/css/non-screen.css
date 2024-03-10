@@ -52,6 +52,6 @@ body {
 
   .author-mentor-container p {
     font-size: 1em;
-    margin: 5px 0;
+    margin: 5px 0 !important;
   }
 }
