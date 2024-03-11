@@ -46,12 +46,16 @@ header h1 {
   width: 100%;
   max-width: 670px; 
   height: 500px;
+  position: absolute; /* Ensures the image stays fixed */
+  top: 0; /* Places the image at the top */
+  left: 50%; /* Centers the image horizontally */
+  transform: translateX(-50%); /* Adjusts horizontally centered position */
   z-index: -1;
 }
 
 .author-mentor-container {
   text-align: center;
-  margin-top: -150px; /* Adjusted margin-top for the authors */
+  margin-top: -50px; /* Adjusted margin-top for the authors */
 }
 
 .author-mentor-container p {
@@ -201,5 +205,6 @@ body::before {
 }
 
 .title-container {
-  margin-top: 100px; /* Adjusted margin-top for the title */
+  margin-top: 50px; /* Adjusted margin-top for the title */
 }
+
