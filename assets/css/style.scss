@@ -29,7 +29,7 @@ header {
 
 header h1 {
   position: absolute;
-  top: 50px; /* Adjusted margin-top for the title */
+  top: 100px; /* Adjusted margin-top for the title */
   left: 50%;
   transform: translateX(-50%);
   font-size: 2.5em;
@@ -49,12 +49,12 @@ header h1 {
   width: 100%;
   max-width: 670px; 
   height: 500px;
-  margin-top: -135px; /* Adjusted margin-top */
+  margin-top: -100px; /* Adjusted margin-top for the clapboard image */
 }
 
 .author-mentor-container {
   text-align: center;
-  margin-top: -250px; /* Adjusted margin-top for the names */
+  margin-top: 50px; /* Adjusted margin-top for the author names */
 }
 
 .author-mentor-container p {
