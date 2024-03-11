@@ -21,7 +21,7 @@ div.shell {
 header {
   position: relative;
   z-index: 2;
-  margin: 100px auto 0; /* Adjusted margin-top value */
+  margin: 70px auto 0;
   max-width: 670px;
   padding: 20px 40px 25px;
   background-image: url('../images/clap_board.png');
@@ -40,7 +40,18 @@ header h1 {
   line-height: 1;
   background-color: black;
   padding: 10px 20px;
-  margin-top: 100px; /* Adjusted margin-top value */
+  margin-top: 20px; /* Adjusted margin-top value */
+}
+
+header .clapboard-image {
+  position: absolute;
+  top: 50px; /* Adjusted margin-top value */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 670px; 
+  height: auto;
+  z-index: -1; 
 }
 
 header h2 {
@@ -66,7 +77,7 @@ header h2 span:last-child {
 
 .author-mentor-container {
   text-align: center;
-  margin-top: 30px; /* Adjusted margin-top value */
+  margin-top: 10px;
 }
 
 .author-mentor-container p {
