@@ -71,7 +71,8 @@ header h1 {
 
 .buttons {
   text-align: center;
-  margin-bottom: 5px;
+  margin-top: 10px; /* Reduce the margin-top to bring the buttons closer to the names */
+  margin-bottom: 5px; /* Adjust the margin-bottom as needed */
 }
 
 .buttons a {
@@ -86,6 +87,10 @@ header h1 {
 
 .buttons a:hover {
   background-color: #333;
+}
+
+#main_content {
+  margin-top: 10px; /* Reduce the margin-top to bring the body content closer to the buttons */
 }
 
 #main_content ul {
