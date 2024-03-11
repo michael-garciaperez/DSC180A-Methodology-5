@@ -71,7 +71,7 @@ header h1 {
 
 .buttons {
   text-align: center;
-  margin-top: 10px; /* Reduce the margin-top to bring the buttons closer to the names */
+  margin-top: -10px; /* Reduce the margin-top to bring the buttons closer to the names */
   margin-bottom: 5px; /* Adjust the margin-bottom as needed */
 }
 
@@ -90,7 +90,7 @@ header h1 {
 }
 
 #main_content {
-  margin-top: 10px; /* Reduce the margin-top to bring the body content closer to the buttons */
+  margin-top: -10px; /* Reduce the margin-top to bring the body content closer to the buttons */
 }
 
 #main_content ul {
