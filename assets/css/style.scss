@@ -3,10 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
 
-/* STYLES */
-
-/* Existing styles from style.scss */
-
 body {
   background-image: url('../images/curtains.jpeg');
   background-size: cover;
@@ -25,20 +21,17 @@ div.shell {
 header {
   position: relative;
   z-index: 2;
-  margin: 70px auto 0; /* Adjusted margin to create space between top bar and header */
-  max-width: 670px; /* Adjusted maximum width */
-  padding: 20px 40px 25px; /* Adjusted padding to move the image up more */
+  margin: 70px auto 0;
+  max-width: 670px;
+  padding: 20px 40px 25px;
   background-image: url('../images/clap_board.png');
-  background-size: cover; /* Adjusted background size */
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top; /* Adjusted background position */
+  background-position: center top;
 }
 
-
-
-
 header h1 {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 800;
   font-style: normal;
   color: white;
@@ -46,23 +39,23 @@ header h1 {
   line-height: 1;
   background-color: black;
   padding: 10px 20px;
+  margin-top: 20px;
 }
 
 header h2 {
-  font-size: 0.8em; /* Adjusted font size */
+  font-size: 0.8em;
   font-weight: 800;
   font-style: normal;
-  color: white; 
+  color: white;
   text-align: center;
   line-height: 1;
   padding: 14px 0;
   background-color: black;
 }
 
-/* Additional styles for h2 */
 header h2 span {
   font-weight: bold;
-  font-size: 1.3em; /* Adjusted font size */
+  font-size: 1.3em;
   margin-bottom: 20px;
 }
 
@@ -70,9 +63,9 @@ header h2 span:last-child {
   margin-top: 40px;
 }
 
-/* Style for author and mentor names */
 .author-mentor-container {
   text-align: center;
+  margin-top: 10px;
 }
 
 .author-mentor-container p {
@@ -82,8 +75,6 @@ header h2 span:last-child {
   margin: 10px;
 }
 
-/* CSS styles */
-/* Buttons */
 .buttons {
   text-align: center;
   margin-bottom: 20px;
@@ -103,7 +94,6 @@ header h2 span:last-child {
   background-color: #333;
 }
 
-/* Table of Contents */
 #main_content ul {
   background-color: black;
   color: white;
@@ -123,110 +113,104 @@ header h2 span:last-child {
 
 .header-level-1 {
   text-align: center;
-  background-color: black; /* Add a black background */
-  color: white; /* Change text color to white */
-  padding: 10px; /* Add padding to create space */
-  margin-bottom: 20px; /* Increase spacing between headers and content below */
-  border-radius: 10px; /* Round the corners */
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 footer p {
-  text-align: center; /* Center align the text */
-  font-size: 0.8em; /* Set smaller font size */
-  margin-top: 40px; /* Increase space above the text */
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 40px;
 }
 
 .footer-text {
   text-align: center;
-  margin-top: 20px; /* Increase the space above */
+  margin-top: 20px;
 }
 
 .footer-text p {
-  margin: 5px 0; /* Adjust the vertical spacing between paragraphs */
+  margin: 5px 0;
 }
 
-/* Transparent black box behind content */
 body::before {
   content: "";
-  position: fixed; /* Change position to fixed */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
-  z-index: -1; /* Place it behind other content */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
-/* Custom CSS from custom.css */
-/* Top bar */
 .top-bar {
-  background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
-  position: fixed; /* Fixed position */
-  width: 100%; /* Full width */
-  top: 0; /* Stick to the top */
-  padding: 20px 0; /* Add padding */
-  z-index: 1000; /* Ensure it appears above other content */
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 0;
+  z-index: 1000;
 }
 
-/* Table of Contents */
 .toc {
-  list-style-type: none; /* Remove bullets */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  text-align: center; /* Center align the list */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .toc li {
-  display: inline-block; /* Display horizontally */
-  margin: 0 10px; /* Add spacing between items */
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .toc li a {
-  color: white; /* Set text color */
-  text-decoration: none; /* Remove underline */
+  color: white;
+  text-decoration: none;
 }
 
 .toc li a:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline;
 }
 
-/* Buttons */
 .buttons {
-  text-align: center; /* Center align the buttons */
-  margin-top: 20px; /* Adjust top margin */
+  text-align: center;
+  margin-top: 20px;
 }
 
 .buttons a {
-  display: inline-block; /* Display buttons inline */
-  margin: 0 10px; /* Add spacing between buttons */
-  padding: 10px 20px; /* Add padding */
-  background-color: black; /* Black background */
-  color: white; /* White text color */
-  text-decoration: none; /* Remove underline */
-  border-radius: 5px; /* Rounded corners */
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .buttons a:hover {
-  background-color: #333; /* Darken background on hover */
+  background-color: #333;
 }
 
-/* Section Headers */
 .header-level-1 {
   text-align: center;
-  background-color: black; /* Add a black background */
-  color: white; /* Change text color to white */
-  padding: 10px; /* Add padding to create space */
-  margin-bottom: 20px; /* Increase spacing between headers and content below */
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-/* Transparent black box behind content */
 body::before {
   content: "";
-  position: fixed; /* Change position to fixed */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
-  z-index: -1; /* Place it behind other content */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
+
