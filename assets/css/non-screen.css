@@ -19,18 +19,23 @@ header {
 }
 
 header h1,
-header h2,
+header h2 {
+  padding: 0 20px;
+}
+
 .author-mentor-container {
+  text-align: center;
   padding: 0 20px;
 }
 
 .author-mentor-container p {
-  font-size: 1em;
-  margin: 5px 0; /* Adjusted margin */
+  font-size: 0.8em; 
+  margin: 5px 0;
 }
 
 .buttons {
-  margin-top: 20px; /* Adjusted margin */
+  text-align: center;
+  margin-top: 20px;
 }
 
 header span.ribbon-inner {
@@ -70,6 +75,6 @@ body {
 
   .author-mentor-container p {
     font-size: 0.5em;
-    margin: 1px 0 !important; /* Adjusted margin */
+    margin: 1px 0 !important;
   }
 }
