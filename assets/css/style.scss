@@ -21,20 +21,20 @@ div.shell {
 header {
   position: relative;
   z-index: 2;
-  margin: 120px auto 0; /* Adjusted margin-top to 120px */
+  margin: 70px auto 0;
   max-width: 670px;
   padding: 20px 40px 25px;
 }
 
 .clapboard-image {
   position: absolute;
-  top: 60px; /* Adjusted top position to 60px */
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 670px;
+  max-width: 670px; 
   height: auto;
-  z-index: -1;
+  z-index: -1; 
 }
 
 header h1 {
@@ -208,7 +208,6 @@ body::before {
   color: white;
   padding: 10px;
   margin-bottom: 20px;
-  border-radius: 10px;
 }
 
 body::before {
@@ -221,3 +220,4 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
