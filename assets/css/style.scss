@@ -20,7 +20,7 @@ div.shell {
 header {
   position: relative;
   z-index: 2;
-  margin: 0 auto; /* Adjusted margin */
+  margin: 100px auto; /* Adjusted margin for the entire header */
   max-width: 670px;
   padding: 20px 40px 25px;
   height: 500px;
@@ -35,7 +35,7 @@ header h1 {
   line-height: 1;
   background-color: black;
   padding: 10px 20px;
-  margin-top: 100px; /* Adjusted margin-top for the title */
+  margin-top: 20px; /* Adjusted margin-top for the title */
 }
 
 .clapboard-image {
@@ -206,4 +206,5 @@ body::before {
 .title-container {
   margin-top: 20px; /* Adjusted margin-top for the title */
 }
+
 
