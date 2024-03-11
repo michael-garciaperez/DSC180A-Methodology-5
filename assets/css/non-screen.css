@@ -11,13 +11,18 @@ header {
   z-index: 2;
   margin: 70px auto 0;
   max-width: 100%;
-  padding: 20px 40px 25px;
+  padding: 20px;
   background-image: url('../images/clap_board.png');
-  background-size: contain; 
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
 }
 
+header h1,
+header h2,
+.author-mentor-container {
+  padding: 0 20px;
+}
 
 header span.ribbon-inner {
   border: 8px solid #800000;
@@ -46,7 +51,7 @@ body {
 
   header {
     max-width: 100%;
-    top: 71px; 
+    top: 71px;
   }
 
   header span.left-tail,
