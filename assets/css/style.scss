@@ -47,12 +47,12 @@ header h1 {
   line-height: 1;
   background-color: black;
   padding: 10px 20px;
-  margin-top: 120px; /* Adjusted margin-top value for h1 */
+  margin-top: 50px; /* Adjusted margin-top value for h1 */
 }
 
 .author-mentor-container {
   text-align: center;
-  margin-top: 200px; /* Adjusted margin-top value for author-mentor-container */
+  margin-top: 50px; /* Adjusted margin-top value for author-mentor-container */
 }
 
 .author-mentor-container p {
@@ -200,5 +200,6 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
 
 
