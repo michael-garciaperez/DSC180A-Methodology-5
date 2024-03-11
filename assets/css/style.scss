@@ -15,13 +15,13 @@ body {
 div.shell {
   display: block;
   width: 670px;
-  margin: 50px auto; /* Adjusted margin */
+  margin: 100px auto; /* Adjusted margin */
 }
 
 header {
   position: relative;
   z-index: 2;
-  margin: 50px auto; /* Adjusted margin */
+  margin: 100px auto; /* Adjusted margin */
   max-width: 670px;
   padding: 20px 40px 25px;
   height: 500px;
@@ -36,7 +36,7 @@ header h1 {
   line-height: 1;
   background-color: black;
   padding: 10px 20px;
-  margin-top: 50px; /* Adjusted margin-top for the title */
+  margin-top: 80px; /* Adjusted margin-top for the title */
 }
 
 .clapboard-image {
@@ -55,7 +55,7 @@ header h1 {
 
 .author-mentor-container {
   text-align: center;
-  margin-top: 100px; /* Adjusted margin-top for the authors */
+  margin-top: 150px; /* Adjusted margin-top for the authors */
 }
 
 .author-mentor-container p {
@@ -207,6 +207,4 @@ body::before {
 .title-container {
   margin-top: 50px; /* Adjusted margin-top for the title */
 }
-
-
 
