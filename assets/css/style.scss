@@ -47,12 +47,12 @@ header h1 {
   line-height: 1;
   background-color: black;
   padding: 10px 20px;
-  margin-top: 200px; /* Adjust the margin-top value to move the title down */
+  margin-top: 200px; /* Adjusted margin-top value for h1 */
 }
 
 .author-mentor-container {
   text-align: center;
-  margin-top: 150px; /* Adjust the margin-top value to move the author-mentor-container down */
+  margin-top: 150px; /* Adjusted margin-top value for author-mentor-container */
 }
 
 .author-mentor-container p {
@@ -132,6 +132,75 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
+.top-bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+.toc {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.toc li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.toc li a {
+  color: white;
+  text-decoration: none;
+}
+
+.toc li a:hover {
+  text-decoration: underline;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.buttons a:hover {
+  background-color: #333;
+}
+
+.header-level-1 {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
 
 .top-bar {
   background-color: rgba(0, 0, 0, 0.5);
