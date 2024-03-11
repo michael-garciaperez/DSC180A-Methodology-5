@@ -21,14 +21,14 @@ div.shell {
 header {
   position: relative;
   z-index: 2;
-  margin: 120px auto 0;
+  margin: 120px auto 0; /* Adjusted margin-top to 120px */
   max-width: 670px;
   padding: 20px 40px 25px;
 }
 
 .clapboard-image {
   position: absolute;
-  top: 0;
+  top: 60px; /* Adjusted top position to 60px */
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -221,5 +221,3 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
-
-
