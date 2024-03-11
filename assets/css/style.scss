@@ -21,7 +21,7 @@ div.shell {
 header {
   position: relative;
   z-index: 2;
-  margin: 200px auto 0; /* Adjusted margin-top value for header */
+  margin: 300px auto 0; /* Adjusted margin-top value for header */
   max-width: 670px;
   padding: 20px 40px 25px;
   background-image: url('../images/clap_board.png');
@@ -40,12 +40,12 @@ header h1 {
   line-height: 1;
   background-color: black;
   padding: 10px 20px;
-  margin-top: 80px; /* Adjusted margin-top value for h1 */
+  margin-top: 120px; /* Adjusted margin-top value for h1 */
 }
 
 .author-mentor-container {
   text-align: center;
-  margin-top: 50px; /* Adjusted margin-top value for author-mentor-container */
+  margin-top: 200px; /* Adjusted margin-top value for author-mentor-container */
 }
 
 .author-mentor-container p {
@@ -193,3 +193,4 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
