@@ -34,6 +34,9 @@
   </div>
 
   <header>
+    <!-- Remove or comment out the following line -->
+    <!--<div class="clapboard-image"></div>-->
+
     <div class="ribbon-outer">
       <div class="ribbon-inner">
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
@@ -48,8 +51,6 @@
       <p style="font-size: 1em;">MENTOR: Parker Addison<br>paddison@deloitte.com</p>
       <p style="font-size: 1em;">MENTOR: Greg Thein<br>gthein@deloitte.com</p>
     </div>
-    
-    <img src="../images/clap_board.png" alt="Clapboard" class="clapboard-image"> <!-- Add the class for the clapboard image -->
   </header>
 
   <div class="buttons">
@@ -62,13 +63,12 @@
       {{ content }}
     </section>
 
-<footer>
-  <div class="footer-text">
-    <p>This project by can be found on <a href="{{ site.github.repository_url }}">GitHub</a>.</p>
-    <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot.</p>
-  </div>
-</footer>
-
+    <footer>
+      <div class="footer-text">
+        <p>This project by can be found on <a href="{{ site.github.repository_url }}">GitHub</a>.</p>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot.</p>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
