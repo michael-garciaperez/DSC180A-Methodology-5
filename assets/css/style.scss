@@ -36,7 +36,8 @@ header h1 {
   line-height: 1;
   background-color: black;
   padding: 10px 20px;
-  margin-top: 150px; /* Adjusted margin-top for the title */
+  margin-top: 150px;
+  max-width: 400px;
 }
 
 .clapboard-image {
