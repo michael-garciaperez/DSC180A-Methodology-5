@@ -24,17 +24,11 @@ header {
   margin: 70px auto 0;
   max-width: 670px;
   padding: 20px 40px 25px;
-}
-
-.clapboard-image {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 670px; 
-  height: auto;
-  z-index: -1; 
+  background-image: url('../images/clap_board.png');
+  background-size: 150% auto; 
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 100%; 
 }
 
 header h1 {
@@ -220,4 +214,5 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
 
