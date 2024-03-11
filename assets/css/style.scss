@@ -21,13 +21,13 @@ div.shell {
 header {
   position: relative;
   z-index: 2;
-  margin: 100px auto 0; /* Adjusted margin-top value */
+  margin: 100px auto 0; /* Adjusted margin-top value for header */
   max-width: 670px;
   padding: 20px 40px 25px;
   background-image: url('../images/clap_board.png');
   background-size: 150% auto; 
   background-repeat: no-repeat;
-  background-position: center top -100px; /* Adjusted background-position */
+  background-position: center top; /* Adjusted background-position */
   height: 500px; 
 }
 
@@ -40,12 +40,12 @@ header h1 {
   line-height: 1;
   background-color: black;
   padding: 10px 20px;
-  margin-top: 20px;
+  margin-top: 80px; /* Adjusted margin-top value for h1 */
 }
 
 .author-mentor-container {
   text-align: center;
-  margin-top: 250px; /* Adjusted margin-top value */
+  margin-top: -30px; /* Adjusted margin-top value for author-mentor-container */
 }
 
 .author-mentor-container p {
