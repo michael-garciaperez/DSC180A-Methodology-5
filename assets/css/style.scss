@@ -15,7 +15,7 @@ body {
 div.shell {
   display: block;
   width: 670px;
-  margin: 100px auto; /* Adjusted margin */
+  margin: 100px auto;
 }
 
 header {
@@ -49,16 +49,16 @@ header h1 {
   width: 100%;
   max-width: 670px; 
   height: 500px;
-  position: absolute; /* Ensures the image stays fixed */
-  top: 0; /* Places the image at the top */
-  left: 50%; /* Centers the image horizontally */
-  transform: translateX(-50%); /* Adjusts horizontally centered position */
+  position: absolute; 
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%); 
   z-index: -1;
 }
 
 .author-mentor-container {
   text-align: center;
-  margin-top: 20px; /* Adjusted margin-top for the authors */
+  margin-top: 10px;
 }
 
 .author-mentor-container p {
