@@ -36,7 +36,9 @@
   <header>
     <div class="ribbon-outer">
       <div class="ribbon-inner">
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <div class="title-container">
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        </div>
       </div>
     </div>
     
