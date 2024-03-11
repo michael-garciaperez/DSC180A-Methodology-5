@@ -20,7 +20,7 @@ header {
 header h1,
 header h2 {
   padding: 0 20px;
-  margin-top: 170px;
+  margin-top: 140px; 
 }
 
 .author-mentor-container {
@@ -30,7 +30,7 @@ header h2 {
 
 .author-mentor-container p {
   font-size: 0.8em;
-  margin: 20px 0;
+  margin: 20px 0; 
 }
 
 .buttons {
@@ -45,7 +45,7 @@ header span.ribbon-inner {
 
 header h1 {
   font-family: 'Public Sans', sans-serif;
-  font-size: 3em;
+  font-size: 3em; 
 }
 
 body {
