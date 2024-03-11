@@ -27,17 +27,11 @@ header {
   height: 500px;
 }
 
-.clapboard-image {
-  background-image: url('../images/clap_board.png');
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  max-width: 670px; 
-  height: 500px;
-  margin-top: -135px; /* Adjusted margin-top */
-}
-
 header h1 {
+  position: absolute;
+  top: 50px; /* Adjusted margin-top for the title */
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 2.5em;
   font-weight: 800;
   font-style: normal;
@@ -46,7 +40,16 @@ header h1 {
   line-height: 1;
   background-color: black;
   padding: 10px 20px;
-  margin-top: 20px; /* Adjusted margin-top */
+}
+
+.clapboard-image {
+  background-image: url('../images/clap_board.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 670px; 
+  height: 500px;
+  margin-top: -135px; /* Adjusted margin-top */
 }
 
 .author-mentor-container {
@@ -199,4 +202,5 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
 
