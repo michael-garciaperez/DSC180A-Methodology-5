@@ -21,19 +21,19 @@ div.shell {
 header {
   position: relative;
   z-index: 2;
-  margin: 70px auto 0;
+  margin: 0 auto; /* Adjusted margin */
   max-width: 670px;
   padding: 20px 40px 25px;
   height: 500px;
 }
 
 .clapboard-image {
-  background-image: url('../images/clapboard.jpg'); /* Adjust the path to your clapboard image */
+  background-image: url('../images/clap_board.png');
   background-size: cover;
   background-position: center;
   width: 100%;
   max-width: 670px; 
-  height: 200px; /* Adjust the height as needed */
+  height: 500px;
   z-index: -1; 
 }
 
@@ -199,5 +199,4 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
-
 
