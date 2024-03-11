@@ -25,10 +25,12 @@ header {
   max-width: 670px;
   padding: 20px 40px 25px;
   background-image: url('../images/clap_board.png');
-  background-size: cover; 
+  background-size: contain; 
   background-repeat: no-repeat;
   background-position: center top;
+  height: 100%; 
 }
+
 
 
 header h1 {
