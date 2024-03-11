@@ -16,11 +16,15 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header h1,
 header h2 {
   padding: 0 20px;
+  text-align: center;
 }
 
 .author-mentor-container {
@@ -29,8 +33,8 @@ header h2 {
 }
 
 .author-mentor-container p {
-  font-size: 0.8em; 
-  margin: 5px 0;
+  font-size: 0.8em; /* Adjusted font size */
+  margin: 5px 0; /* Adjusted margin */
 }
 
 .buttons {
@@ -75,6 +79,6 @@ body {
 
   .author-mentor-container p {
     font-size: 0.5em;
-    margin: 1px 0 !important;
+    margin: 1px 0 !important; /* Adjusted margin */
   }
 }
