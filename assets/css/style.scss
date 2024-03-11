@@ -33,12 +33,9 @@ header {
   background-position: center;
   width: 100%;
   max-width: 670px; 
-  height: 200px; /* Adjusted height */
-  z-index: -1; 
-  position: absolute; /* Adjusted position */
-  top: 0; /* Adjusted position */
-  left: 50%; /* Adjusted position */
-  transform: translateX(-50%); /* Adjusted position */
+  height: 500px;
+  z-index: -1;
+  margin-top: 50px; /* Adjust this value to move the image up or down */
 }
 
 header h1 {
@@ -55,7 +52,7 @@ header h1 {
 
 .author-mentor-container {
   text-align: center;
-  margin-top: 250px; /* Adjusted margin-top */
+  margin-top: 50px;
 }
 
 .author-mentor-container p {
@@ -203,5 +200,6 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
 
 
