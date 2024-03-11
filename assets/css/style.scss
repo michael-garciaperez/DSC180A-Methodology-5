@@ -67,12 +67,13 @@ header h1 {
   padding: 2px;
   margin: 5px;
   margin-top: 25px;
+  margin-bottom: -25px;
 }
 
 .buttons {
   text-align: center;
   margin-top: -10px; /* Reduce the margin-top to bring the buttons closer to the names */
-  margin-bottom: 5px; /* Adjust the margin-bottom as needed */
+  margin-bottom: -20px; /* Adjust the margin-bottom as needed */
 }
 
 .buttons a {
