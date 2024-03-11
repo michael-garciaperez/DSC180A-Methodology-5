@@ -9,7 +9,7 @@ div.shell {
 header {
   position: relative;
   z-index: 2;
-  margin: 200px auto 0; 
+  top: 200px; 
   max-width: 100%;
   padding: 20px;
   background-image: url('../images/clap_board.png');
@@ -21,7 +21,7 @@ header {
 header h1,
 header h2 {
   padding: 0 20px;
-  margin-bottom: 80px; 
+  margin-bottom: 40px;
 }
 
 .author-mentor-container {
