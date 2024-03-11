@@ -40,7 +40,7 @@ header h1 {
   line-height: 1;
   background-color: black;
   padding: 10px 20px;
-  margin-top: 20px;
+  margin-top: 60px; /* Adjusted margin-top value */
 }
 
 header h2 {
@@ -66,7 +66,7 @@ header h2 span:last-child {
 
 .author-mentor-container {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px; /* Adjusted margin-top value */
 }
 
 .author-mentor-container p {
@@ -214,5 +214,4 @@ body::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
-
 
