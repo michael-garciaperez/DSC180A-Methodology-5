@@ -1,5 +1,6 @@
 ---
 ---
+
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
 
 body {
@@ -35,7 +36,7 @@ header h1 {
   line-height: 1;
   background-color: black;
   padding: 10px 20px;
-  margin-top: 100px; /* Adjusted margin-top for the title */
+  margin-top: 20px; /* Adjusted margin-top for the title */
 }
 
 .clapboard-image {
@@ -199,3 +200,6 @@ body::before {
   z-index: -1;
 }
 
+.title-container {
+  margin-top: 50px; /* Adjusted margin-top for the title */
+}
