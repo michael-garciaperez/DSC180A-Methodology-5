@@ -163,7 +163,22 @@ Recommender System using Singular Value Decomposition
 
 ## Bias Mitigation
 
-Your content goes here.
+A pre-processing technique called **reweighing** is employed as a bias mitigation strategy.
+- Pre-processing techniques are applied to the training data from which a model is learned.
+- More information on these terms can be found in [AIF360's glossary](https://aif360.res.ibm.com/resources#glossary).
+
+The dataset is reweighed using the **Reweighing technique**, which **adjusts the instance weights** in the different groups and labels to mitigate bias.
+- More information on Reweighing in particular can be found through the [documentation](https://aif360.readthedocs.io/en/latest/modules/generated/aif360.algorithms.preprocessing.Reweighing.html).
+
+Random Forest Pre-Processing Bias Mitigation
+- A Random Forest Classifier is **trained on the reweighed dataset**.
+- This approach aims to address bias in the original model's predictions by reweighing instances based on the protected attribute 'all_male_director' before training the model.
+- Bias Metrics After Mitigation:
+    - Disparate Impact: ~1.0
+    - Statistical Parity Difference: ~0.0
+    - The bias metrics **improved significantly**, with the Disparate Impact being approximately 1 and the Statistical Parity Difference close to zero, **indicating a fair model**.
+- After retraining on the reweighed data, the Random Forest Classifier with 100 estimators achieved an **accuracy of ~0.79**, which **did not increase or decrease** compared to the original accuracy of  ~0.79.
+- This suggests that the reweighing technique **successfully mitigated bias**, resulting in a **fairer model** while maintaining **similar predictive accuracy**.
 
 ## Conclusion & Results
 
