@@ -25,7 +25,8 @@ Our aim is to develop a fair movie recommender system that minimizes biases asso
 
 ## Methods
 
-Your methods content goes here.
+The [data](https://grouplens.org/datasets/movielens/1m/) for **user ratings** is sourced from [MovieLens](https://movielens.org/), an online platform that provides personalized movie recommendations based on users' viewing preferences and rating history.
+  - We gather over a million anonymous ratings of approximately 3,900 movies made by 6,040 MovieLens users who joined the platform in 2000.
 
 ## Model Development & Evaluation
 
