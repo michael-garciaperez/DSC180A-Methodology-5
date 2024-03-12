@@ -26,8 +26,9 @@ header {
   position: relative;
   z-index: 2;
   margin: 100px auto 0; /* Adjusted margin */
-  padding: 20px 40px 25px;
+  padding: 20px 0 25px; /* Adjusted padding */
   height: 500px;
+  width: 100%; /* Set header width to span the full width */
 }
 
 header h1 {
@@ -39,7 +40,7 @@ header h1 {
   line-height: 1;
   background-color: black;
   padding: 10px 20px;
-  max-width: 100%; /* Updated to span the full width */
+  max-width: 550px;
   margin-left: auto; 
   margin-right: auto; 
 }
@@ -193,4 +194,3 @@ a {
 a:hover {
   color: darkgray;
 }
-
