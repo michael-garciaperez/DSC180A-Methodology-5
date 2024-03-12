@@ -119,7 +119,7 @@ Recommender System using Cosine Similarity
     - For User 1, the Cosine Similarity recommender system exhibited the same behavior as the Jaccard Similarity recommender system. Each of the top 10 movie recommendations are fully directed by males.
 - Recommendations for User 2908:
     - graph
-    - TO DO
+    - User 2908's recommended movies using Cosine Similarity were more diverse than their recommended movies using Jaccard Similarity, but still had a lot less movies featuring female directors than their rating history.
 
 Recommender System using Pearson Correlation
 - This model measures the linear correlation between two movies based on the ratings provided by users.
@@ -132,7 +132,34 @@ Recommender System using Pearson Correlation
     - 20% of User 1's recommended movies featured a female director, a notable increase compared to the ~5% average observed within User 1's watch history.
 - Recommendations for User 2908:
     - graph
-    - TO DO
+    - User 2908's recommended movies using Pearson Correlation performed the same as Jaccard Similarity, with no movies featuring female directors.
+- For User 1, the recommender system using Pearson Correlation yielded the greatest percentage of female directed movies (20%), whereas it was Cosine Similarity (10%) for User 2908. -    - User 1 received more diverse recommendations using Pearson, even though they rated less female directed movies than User 2908.
+
+It is inconclusive which similarity function yields in the least biased recommendations, since it varies per user.
+
+Beyond similarity metrics, recommender systems can use **Singular Value Decomposition (SVD)**, a Matrix Factorization-based algorithm that  captures latent factors underlying user preferences.
+
+Recommender System using Singular Value Decomposition
+- The recommender model uses an SVD object, which is trained to optimize predictive performance using user-item interactions.
+- This algorithm allows us to make predictions for specific movies for users.
+- The model's utility is evaluated using Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE).
+    - RMSE tends to penalize large errors more than smaller ones due to the squaring operation.
+        - It is useful for comparing models and understanding the spread of errors, but it is not very intuitive for human interpretation.
+    - MAE provides a more straightforward and human-friendly interpretation.
+        - It represents the average magnitude of errors without considering their direction (i.e., whether they are overestimations or underestimations).
+        - MAE gives the average absolute error, making it easier to understand/interpret in real-world terms.
+            - For example, if the MAE is 5, it means, on average, that the model's predictions are off by 5 units from the actual values.
+- Bias metrics:
+    - Disparate Impact Before Mitigation: ~0.38
+        - This metric indicates a significant disparity in favorable outcomes between movies directed by males and those directed by females, with a value of ~0.38 suggesting unequal representation in the recommended items.
+    - Statistical Parity Difference Before Mitigation: approx. -0.052
+        - The negative value of approx. -0.052 does not significantly indicate a bias favoring movies directed by females in receiving favorable outcomes.
+- Utility:
+    - RMSE (Root Mean Squared Error) Before Mitigation: ~0.71
+        - The RMSE value signifies the average discrepancy between predicted and actual ratings, reflecting the prediction accuracy of the model in prioritizing entirely-male directed content.
+    - MAE (Mean Absolute Error) Before Mitigation: ~0.56
+        - The model's average deviation from actual ratings is approximately 0.56 units, allowing insight into prediction accuracy without considering the direction of errors.
+- To convert the predictions to recommendations, we recommend the user movies that they are predicted to give 5 stars.
 
 ## Bias Mitigation
 
