@@ -53,9 +53,28 @@ Note that there **is** a strong **class imbalance** within the dataset, where **
 - Refer to the report for a full breakdown on the class imbalance.
 - Because of **similar utility performance** in **predictive models** across **director genders**, plus the time-constraints of the project and limited resources, we decide not to correct the class imbalance.
 
+Utilizing AIF360 to assess for bias, we measure the **Disparate Impact** and **Statistical Parity Difference** of our dataset.
+
+- Disparate Impact Before Mitigation: ~0.694
+  - The **3/4ths rule** is a standard threshold used for disparate impact analysis. If the favorable outcome rate for a group is < 75% (a.k.a. 3/4), bias is present in the dataset.
+  - The Disparate Impact value of ~0.69 maps to a percentage of ~69%, which is < than 75%. There is a **bias in how 5-star ratings** are distributed between the different genders of the directors.
+  - Movies with **female directors** are getting 5-star ratings about **69% as often** as **fully male-directed** movies.
+  - Fully male-directed movies, as the **privileged group**, are **more likely** to achieve the **favorable outcome** compared to movies with female directors.
+
+- Statistical Parity Difference Before Mitigation: approx. -0.068
+      - A Statistical Parity Difference **close to 0** shows **no difference** in the proportion of **favorable outcomes** between different groups.
+      - Our value is close to 0 and does **not show a discernible bias**.
+
+While the Statistical Parity Difference does not notably capture bias, the **Disparate Impact** shows a strong indication of **bias based on the director gender**.
+
 ## Model Development & Evaluation
 
-Your model development content goes here.
+AIF360's bias mitigation techniques are optimized for classification and regression tasks, so first examine bias mitigation in our dataset on a **classifier model**.
+- We evaluate the efficacy of bias mitigation techniques within a classifier before extrapolating these insights to recommender systems.
+
+Random Forest (Classification Algorithm):
+- We use a **Random Forest Classifier** to predict whether a user will **give a movie a perfect rating (5 stars)** based on various movie attributes, including the year of release, genre, and **whether or not the movie is entirely-male directed**.
+  - Full details on model development (e.g., training/testing data, hyperparameter tuning) can be found in the report.
 
 ## Bias Mitigation
 
