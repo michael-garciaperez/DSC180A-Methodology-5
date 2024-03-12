@@ -37,6 +37,22 @@ To prepare our data for model development, we **binarize** the director gender c
 - Movies can have more than one director, so we note the proportion of directors for each movie who identify as male.
     - We convert this proportion to 1 if the movie is fully directed by males, and 0 if the movie involves at least one female director (i.e., is not entirely male directed).
 
+![Distribution of Rating Scores](../images/rating_dist.jpeg)
+
+- Ratings in the dataset range from a **discrete** number **between 1 and 5**.
+- Most ratings are on the **higher side** with a score of 4. There are less low ratings of 1 and 2 in our dataset.
+
+We further separate this by the **director's gender** to compare the **proportion of ratings** between male versus female directors.
+
+![Proportion of Ratings by Director Gender](../images/prop_ratings.jpeg)
+
+- **Entirely-male directed** movies received a **greater proportion** of **5 star** ratings.
+- This leads us to define the rating of **5 stars** as a high rating, using this definition later to assess for bias on whether fully male-directed movies are **advantaged** to receive **5 star** rating prediction.
+
+Note that there **is** a strong **class imbalance** within the dataset, where **most movies are entirely-male directed**. 
+- Refer to the report for a full breakdown on the class imbalance.
+- Because of **similar utility performance** in **predictive models** across **director genders**, plus the time-constraints of the project and limited resources, we decide not to correct the class imbalance.
+
 ## Model Development & Evaluation
 
 Your model development content goes here.
