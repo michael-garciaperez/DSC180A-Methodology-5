@@ -25,8 +25,7 @@ div.shell {
 header {
   position: relative;
   z-index: 2;
-  margin: 100px auto; /* Adjusted margin */
-  max-width: 670px;
+  margin: 100px auto 0; /* Adjusted margin */
   padding: 20px 40px 25px;
   height: 500px;
 }
@@ -40,8 +39,7 @@ header h1 {
   line-height: 1;
   background-color: black;
   padding: 10px 20px;
-  margin-top: 150px;
-  max-width: 550px;
+  max-width: 100%; /* Updated to span the full width */
   margin-left: auto; 
   margin-right: auto; 
 }
@@ -195,3 +193,4 @@ a {
 a:hover {
   color: darkgray;
 }
+
