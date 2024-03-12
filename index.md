@@ -5,8 +5,6 @@ title: "Mitigating Director Gender Bias in Movie Recommender Systems"
 
 ## Introduction
 
-## Introduction
-
 Studies in sociology and media studies have revealed a **gender gap** in the film industry, with an **underrepresentation** of **female directors** in film production.
 
 <ul>
