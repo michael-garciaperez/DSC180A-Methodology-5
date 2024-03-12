@@ -76,6 +76,16 @@ Random Forest (Classification Algorithm):
 - We use a **Random Forest Classifier** to predict whether a user will **give a movie a perfect rating (5 stars)** based on various movie attributes, including the year of release, genre, and **whether or not the movie is entirely-male directed**.
   - Full details on model development (e.g., training/testing data, hyperparameter tuning) can be found in the report.
 
+Bias Metrics Before Mitigation:
+- Disparate Impact: ~0.668
+     - The Disparate Impact suggests that the unprivileged group is at a disadvantage compared to the privileged group, as they are less likely to receive favorable outcomes.
+- Statistical Parity Difference: approx. -0.0743
+      - The Statistical Parity Difference is not a strong indicator of bias due to this value being close to 0.
+
+Accuracy Before Mitigation: ~0.787
+- Refer to the report for full breakdown on utility measures including precision, recall, and f1-score.
+- Refer to the report for figures on the ROC-AUC Curve, Precision-Recall Curve, and Feature Importances Bar Plot.
+
 ## Bias Mitigation
 
 Your content goes here.
