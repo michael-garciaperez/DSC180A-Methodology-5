@@ -62,8 +62,8 @@ Utilizing AIF360 to assess for bias, we measure the **Disparate Impact** and **S
   - Fully male-directed movies, as the **privileged group**, are **more likely** to achieve the **favorable outcome** compared to movies with female directors.
 
 - Statistical Parity Difference Before Mitigation: approx. -0.068
-      - A Statistical Parity Difference **close to 0** shows **no difference** in the proportion of **favorable outcomes** between different groups.
-      - Our value is close to 0 and does **not show a discernible bias**.
+   - A Statistical Parity Difference **close to 0** shows **no difference** in the proportion of **favorable outcomes** between different groups.
+   - Our value is close to 0 and does **not show a discernible bias**.
 
 While the Statistical Parity Difference does not notably capture bias, the **Disparate Impact** shows a strong indication of **bias based on the director gender**.
 
