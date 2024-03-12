@@ -6,30 +6,18 @@ title: "Mitigating Director Gender Bias in Movie Recommender Systems"
 ## Introduction
 
 Studies in sociology and media studies have revealed a **gender gap** in the film industry, with an **underrepresentation** of **female directors** in film production.
-
-<ul>
-  <li style="margin-left: 20px;">In over 2000 films released between 1994 and 2016, only <strong>5%</strong> of the directors were <strong>female</strong>. [^1]</li>
-  <li style="margin-left: 20px;">In top-grossing films released between 2007 and 2021, the ratio of <strong>male to female</strong> directors was <strong>11:1</strong>. [^2]</li>
-</ul>
+-    In over 2000 films released between 1994 and 2016, only **5%** of the directors were **female**.[[^1]]
+-    In top-grossing films released between 2007 and 2021, the ratio of **male to female** directors was **11:1**.[[^2]]
 
 However, the implications of this disparity on recommendation systems is not widely researched.
-
-<ul>
-  <li style="margin-left: 20px;">Most studies look at bias from a statistical perspective (e.g., popularity bias).</li>
-</ul>
+-    Most studies look at bias from a statistical perspective (e.g., popularity bias).
 
 Many content distribution platforms (such as Netflix) utilize recommendation models for personalized user content.
-
-<ul>
-  <li style="margin-left: 20px;">A recommender system filters information (e.g., user and item data) to provide personalized suggestions to users.</li>
-  <li style="margin-left: 20px;">We investigate whether this gender bias is embedded into the outputs and suggestions of various recommendation models, developed using different similarity metrics and algorithms.</li>
-</ul>
+-    A recommender system filters information (e.g., user and item data) to provide personalized suggestions to users.
+-    We investigate whether this gender bias is embedded into the outputs and suggestions of various recommendation models, developed using different similarity metrics and algorithms.
 
 Widely adopted bias mitigation tools (e.g., [IBM's AI Fairness 360](https://aif360.readthedocs.io/en/stable/index.html)) are also optimized for **regression** and **classification** tasks, not recommendation tasks.
-
-<ul>
-  <li style="margin-left: 20px;">Our project fills this gap by investigating whether bias mitigation techniques developed for regression and classification tasks can be **extended to recommendation systems**.</li>
-</ul>
+-    Our project fills this gap by investigating whether bias mitigation techniques developed for regression and classification tasks can be **extended to recommendation systems**.
 
 Our aim is to develop a fair movie recommender system that minimizes biases associated with the gender of the director.
 
