@@ -6,8 +6,8 @@ title: "Mitigating Director Gender Bias in Movie Recommender Systems"
 ## Introduction
 
 Studies in sociology and media studies have revealed a **gender gap** in the film industry, with an **underrepresentation** of **female directors** in film production.
-  - In over 2000 films released between 1994 and 2016, only **5%** of the directors were **female**[^1].
-  - In top-grossing films released between 2007 and 2021, the ratio of **male to female** directors was **11:1**[^2].
+  - In over 2000 films released between 1994 and 2016, only **5%** of the directors were **female**[[^1]].
+  - In top-grossing films released between 2007 and 2021, the ratio of **male to female** directors was **11:1**[[^2]].
 
 However, the implications of this disparity on recommendation systems is not widely researched.
   - Most studies look at bias from a statistical perspective (e.g., popularity bias).
@@ -38,6 +38,8 @@ Your content goes here.
 ## Conclusion & Results
 
 Your conclusion and discussion content goes here.
+
+## References
 
 [^1]: Karniouchina, E. V., Carson, S. J., Theokary, C., Rice, L., & Reilly, S. (2023). *Women and minority film directors in Hollywood: Performance implications of product development and distribution biases.* Journal of Marketing Research, 60(1), 25-51. [DOI: 10.1177/00222437221100217]
 
