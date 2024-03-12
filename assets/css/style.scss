@@ -182,3 +182,12 @@ body::before {
 strong {
   font-weight: bold;
 }
+
+a {
+  color: gray;
+  text-decoration: none; /* Optional: Remove underline */
+}
+
+a:hover {
+  color: darkgray;
+}
