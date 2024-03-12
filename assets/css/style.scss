@@ -25,10 +25,9 @@ div.shell {
 header {
   position: relative;
   z-index: 2;
-  margin: 100px auto 0; /* Adjusted margin */
-  padding: 20px 0 25px; /* Adjusted padding */
+  margin: 100px auto; /* Adjusted margin */
+  padding: 20px 40px 25px;
   height: 500px;
-  width: 100%; /* Set header width to span the full width */
 }
 
 header h1 {
@@ -40,6 +39,7 @@ header h1 {
   line-height: 1;
   background-color: black;
   padding: 10px 20px;
+  margin-top: 150px;
   max-width: 550px;
   margin-left: auto; 
   margin-right: auto; 
