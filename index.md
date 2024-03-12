@@ -160,6 +160,11 @@ Recommender System using Singular Value Decomposition
     - MAE (Mean Absolute Error) Before Mitigation: ~0.56
         - The model's average deviation from actual ratings is approximately 0.56 units, allowing insight into prediction accuracy without considering the direction of errors.
 - To convert the predictions to recommendations, we recommend the user movies that they are predicted to give 5 stars.
+    - Both User 1 & User 2908 received all entirely-male directed movies as recommendations, despite having a stark contrast in the diversity of their rating history.
+    - User 1:
+        - graph
+    - User 2908:
+        - graph
 
 ## Bias Mitigation
 
@@ -180,9 +185,49 @@ Random Forest Pre-Processing Bias Mitigation
 - After retraining on the reweighed data, the Random Forest Classifier with 100 estimators achieved an **accuracy of ~0.79**, which **did not increase or decrease** compared to the original accuracy of  ~0.79.
 - This suggests that the reweighing technique **successfully mitigated bias**, resulting in a **fairer model** while maintaining **similar predictive accuracy**.
 
-## Conclusion & Results
+The similarity metrics used in our recommender models above (Jaccard, Cosine, and Pearson correlation) rely on the dataset to calculate similarities between movies.
+- Since the dataset exhibits bias towards male-directed content, these similarity metrics also favor male-directed movies in recommendations.
+- By applying reweighing, the transformed dataset aims to mitigate such bias, ensuring that similarity calculations consider a more balanced representation of movies directed by individuals of different genders.
 
-Your conclusion and discussion content goes here.
+We develop the models again using the same similarity metrics (Jaccard, Cosine, and Similarity) on the **transformed dataset**.
+- The percentage of movies with female directors in the recommendations stayed the same as before for all similarity metrics for User 1 and User 2908.
+
+Like the other similarity metrics above, **SVD** relies on user-item interaction data to make recommendations.
+- By using a reweighted dataset to adjust the representation of male-directed and female-directed movies, we investigate whether there is a difference in recommended movies before and after mitigation.
+- Bias Metrics:
+    - Disparate Impact After Mitigation: ~0.6295
+        - The Disparate Impact After Mitigation showed a more fair result.
+        - The Disparate Impact Before Mitigation was ~0.38, increasing to ~0.63 after. This value **approached 1** and indicates a **more fair model**.
+    - Statistical Parity Difference After Mitigation: approx. -0.004
+        - The Statistical Parity Difference was low to begin with (i.e., close to 0) and did **not indicate bias** in that metric itself.
+- Utility:
+    - RMSE After Mitigation: ~1.2134
+        - RMSE increased from ~0.71 to ~1.21.
+    - MAE After Mitigation: ~0.989
+        - MAE increased from ~0.56 to ~0.989.
+    - Model utility **worsened after Reweighing** was applied.
+    - There appears to be a **trade-off between model utility and fairness**, as the **predictive capabilities worsened** and will not perform as well.
+
+- To convert the predictions to recommendations, we recommend the user movies that they are predicted to give 5 stars.
+    - The model performed the same as before bias mitigation, both User 1 & User 2908 continue to receive all entirely-male directed movies as recommendations.
+
+## Results
+
+Reweighing as a pre-processing bias mitigation technique was **successful** for the **Random Forest Classifier**, but remains **limited** in its application to **recommender systems**.
+
+Despite applying the reweighted dataset to the recommender models utilizing Jaccard and Cosine Similarity and Pearson Correlation, there was **no difference** in the diversity of movie recommendations.
+- The movie recommendations continued to exhibit a dominance of male-directed content, indicating that the reweighing technique did not effectively mitigate gender bias in these particular models.
+- It appears that reweighing the dataset **did not impact** the **calculation of the similarity metrics**, resulting in the same top 10 movie recommendations before and after bias mitigation in the model.
+
+However, **reweighing** the recommender system using **SVD** was able to yield a **Disparate Impact closer to 1**, effectively **mitigating some bias** in the **predictions of rating scores**.
+- Before graph
+- After graph
+    - After applying Reweighing, the **proportion of 5 star ratings** (perfect ratings, the favorable outcome) became **more equal** between entirely-male directed movies & movies featuring female directors. 
+- The **model utility decreases** though, making Reweighing not the ideal choice due to lower predictive performance.
+- When **predictions** were **converted to recommendations**, there was still a **dominance of male-directed content**.
+
+## Discussion
+To Do
 
 ## References
 
