@@ -17,9 +17,9 @@ Many content distribution platforms (such as Netflix) utilize recommendation mod
 
 As such, we investigate whether this gender bias is embedded into the outputs and suggestions of various recommendation models developed using different similarity metrics and algorithms.
 
-Widely adopted bias mitigation tools (such as IBM's AI Fairness 360 open source toolkit) are also optimized for regression and classification tasks, not recommendation tasks.
+Widely adopted bias mitigation tools (e.g., [IBM's AI Fairness 360](https://aif360.readthedocs.io/en/stable/index.html)) are also optimized for **regression** and **classification** tasks, not recommendation tasks.
 
-Our project fills this gap by investigating whether bias mitigation techniques developed for regression and classification tasks can be extended to recommendation systems.
+Our project fills this gap by investigating whether bias mitigation techniques developed for regression and classification tasks can be **extended to recommendation systems**.
 
 Our aim is to develop a fair movie recommender system that minimizes biases associated with the gender of the director.
 
