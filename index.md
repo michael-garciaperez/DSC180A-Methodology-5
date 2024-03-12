@@ -86,6 +86,54 @@ Accuracy Before Mitigation: ~0.787
 - Refer to the report for full breakdown on utility measures including precision, recall, and f1-score.
 - Refer to the report for figures on the ROC-AUC Curve, Precision-Recall Curve, and Feature Importances Bar Plot.
 
+Recommender Systems
+- We develop several recommender systems using various similarity metrics and matrix calculations.
+- Mathematical formulas for each similarity metric can be found in the definitions section of the report.
+- To examine patterns in the director gender breakdown of recommended movies, we look at the recommendations for two different users with different rating histories.
+- User 1:
+    - graph
+    - Only ~5% of User 1's rating history included at least one female director.
+    - User 1 did not have a very diverse rating history in terms of director gender.
+- User 2908:
+    - graph
+    - User 2908 had the greatest representation of female directed movies in the dataset, as ~44% of the movies they have rated featured female directors.
+
+Recommender System using Jaccard Similarity
+- A Movie-User matrix is created based on user ratings. The recommendation algorithm relies on Jaccard Similarity between movies to generate personalized recommendations for a user.
+- Recommendations for User 1:
+    - graph
+    - The top 10 recommended movies for User 1 do not provide diverse suggestions.
+    - All the recommended movies are entirely male-directed, introducing bias and overlooking potentially good recommendations directed by females.
+- Recommendations for User 2908:
+    - graph
+    - User 2908's recommended movies did not have any female directors, every movie recommended was entirely male-directed.
+    - Despite User 2908 having a more gender diverse rating history, the Jaccard recommender system performed the same as it did for User 1, who had low gender diversity in ratings.
+
+We investigate whether recommender systems using **different similarity measures** are able to provide more diverse recommendations. We look at **Cosine Similarity**, a popular measure for capturing nuanced relationships between items and users, and **Pearson Correlation**, which captures linear relationships between variables.
+
+Recommender System using Cosine Similarity
+- Cosine similarity evaluates the similarity between movies based on the cosine of the angle between their respective feature vectors, representing user ratings.
+- The higher the cosine similarity value, the more alike two movies are considered to be in terms of user ratings.
+- Recommendations for User 1:
+    - graph
+    - For User 1, the Cosine Similarity recommender system exhibited the same behavior as the Jaccard Similarity recommender system. Each of the top 10 movie recommendations are fully directed by males.
+- Recommendations for User 2908:
+    - graph
+    - TO DO
+
+Recommender System using Pearson Correlation
+- This model measures the linear correlation between two movies based on the ratings provided by users.
+- A higher Pearson correlation indicates greater similarity in user ratings between two movies.
+- It identifies the common users who have rated both movies, then computes the correlation coefficient based on their ratings.
+    - If there are no common users, the correlation is considered to be zero.
+- Recommendations for User 1:
+    - graph
+    - Recommendations for User 1 exhibited an increase in diversity concerning the gender of movie directors (compared to the Jaccard and Cosine similarity models).
+    - 20% of User 1's recommended movies featured a female director, a notable increase compared to the ~5% average observed within User 1's watch history.
+- Recommendations for User 2908:
+    - graph
+    - TO DO
+
 ## Bias Mitigation
 
 Your content goes here.
