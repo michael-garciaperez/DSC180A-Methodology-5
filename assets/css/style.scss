@@ -10,15 +10,11 @@ body {
   font-family: 'Public Sans', sans-serif;
   color: white;
   margin: 0;
-  max-width: 900px; /* Set body width to 900px */
-  margin-left: auto;
-  margin-right: auto;
 }
 
 div.shell {
   display: block;
-  width: 100%; /* Adjusted shell width to 100% */
-  max-width: 900px; /* Set shell width to 900px */
+  width: 670px;
   margin: 100px auto;
 }
 
@@ -51,7 +47,7 @@ header h1 {
   background-size: cover;
   background-position: center;
   width: 100%;
-  max-width: 900px; /* Set clapboard width to 900px */
+  max-width: 670px; 
   height: 500px;
   position: absolute; 
   top: 0; 
@@ -195,3 +191,4 @@ a {
 a:hover {
   color: darkgray;
 }
+
