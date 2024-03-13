@@ -211,17 +211,17 @@ a:hover {
   
   .author-mentor-container {
     margin-top: 20px; /* Adjusted margin */
-    padding: 0 20px; /* Added padding */
+    width: 80%; /* Set specific width */
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .buttons {
     margin-top: 30px;
     margin-bottom: 0;
-  }
-  
-  .buttons a {
-    padding: 10px 20px;
-    font-size: 1em;
+    width: 80%; /* Set specific width */
+    margin-left: auto;
+    margin-right: auto;
   }
   
   #main_content {
@@ -232,3 +232,4 @@ a:hover {
     margin-top: 20px;
   }
 }
+
