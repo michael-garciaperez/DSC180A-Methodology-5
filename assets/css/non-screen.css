@@ -230,11 +230,12 @@ a:hover {
   }
   
   #main_content {
-    padding: 0 20px;
+    padding: 20px; /* Add padding to move the body text down */
   }
   
   footer p {
     margin-top: 20px;
   }
 }
+
 
