@@ -211,17 +211,29 @@ a:hover {
   
   .author-mentor-container {
     margin-top: 20px; /* Adjusted margin */
-    width: 80%; /* Set specific width */
+    width: 90%; /* Set specific width */
     margin-left: auto;
     margin-right: auto;
+    text-align: center; /* Center text */
+  }
+  
+  .author-mentor-container p {
+    width: 100%; /* Set width to full for inline-block elements */
+    margin: 5px 0; /* Adjust margin */
   }
   
   .buttons {
     margin-top: 30px;
     margin-bottom: 0;
-    width: 80%; /* Set specific width */
+    width: 90%; /* Set specific width */
     margin-left: auto;
     margin-right: auto;
+  }
+  
+  .buttons a {
+    display: block; /* Display buttons as block elements */
+    margin-bottom: 10px; /* Adjust margin between buttons */
+    width: 100%; /* Set width to full */
   }
   
   #main_content {
