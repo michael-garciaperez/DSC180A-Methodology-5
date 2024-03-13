@@ -230,7 +230,7 @@ a:hover {
   }
   
   #main_content {
-    padding: 325px; /* Add padding to move the body text down */
+    padding-top: 325px; /* Add padding to move the body text down */
   }
   
   footer p {
