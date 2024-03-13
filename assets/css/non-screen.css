@@ -197,7 +197,7 @@ a:hover {
   }
   
   header {
-    margin-top: 200px; /* Adjusted margin-top to move only the header down */
+    margin-top: 50px; /* Adjusted margin-top for header */
     max-width: 90%;
   }
   
@@ -207,6 +207,7 @@ a:hover {
   
   .clapboard-image {
     max-width: 90%;
+    top: 50px; /* Adjusted top position for clapboard image */
   }
   
   .author-mentor-container {
