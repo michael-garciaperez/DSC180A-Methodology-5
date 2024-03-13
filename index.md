@@ -91,11 +91,12 @@ Recommender Systems
 - Mathematical formulas for each similarity metric can be found in the definitions section of the report.
 - To examine patterns in the director gender breakdown of recommended movies, we look at the recommendations for two different users with different rating histories.
 - User 1:
-    - graph
+    - ![Percentage of Director Gender of User 1's Rating History](https://raw.githubusercontent.com/michael-garciaperez/DSC180B-Capstone-Project/main/assets/images/1_userrating.png)
     - Only ~5% of User 1's rating history included at least one female director.
     - User 1 did not have a very diverse rating history in terms of director gender.
 - User 2908:
-    - graph
+    - ![Percentage of Director Gender of User 2908's Rating History](https://raw.githubusercontent.com/michael-garciaperez/DSC180B-Capstone-Project/main/assets/images/2908_userrating.png)
+
     - User 2908 had the greatest representation of female directed movies in the dataset, as ~44% of the movies they have rated featured female directors.
 
 Recommender System using Jaccard Similarity
@@ -220,8 +221,8 @@ Despite applying the reweighted dataset to the recommender models utilizing Jacc
 - It appears that reweighing the dataset **did not impact** the **calculation of the similarity metrics**, resulting in the same top 10 movie recommendations before and after bias mitigation in the model.
 
 However, **reweighing** the recommender system using **SVD** was able to yield a **Disparate Impact closer to 1**, effectively **mitigating some bias** in the **predictions of rating scores**.
-- Before graph
-- After graph
+- ![Predicted Ratings Before Mitigation](https://raw.githubusercontent.com/michael-garciaperez/DSC180B-Capstone-Project/main/assets/images/beforemit.png)
+- ![Predicted Ratings After Mitigation](https://raw.githubusercontent.com/michael-garciaperez/DSC180B-Capstone-Project/main/assets/images/aftermit.png)
     - After applying Reweighing, the **proportion of 5 star ratings** (perfect ratings, the favorable outcome) became **more equal** between entirely-male directed movies & movies featuring female directors. 
 - The **model utility decreases** though, making Reweighing not the ideal choice due to lower predictive performance.
 - When **predictions** were **converted to recommendations**, there was still a **dominance of male-directed content**.
@@ -231,17 +232,17 @@ The efficacy of AIF360's Reweighing technique on bias mitigation in recommender 
 - Reweighing made no difference in the similarity metric based recommender systems.
 - Rhe predictions from SVD saw a substantial bias mitgiation. Yet, when the SVD predictions are converted to recommendations, there continues to be a dominance of entirely male-directed films being recommended.
 - 
-There is potential for AIF360 as a bias mitigation tool in recommender systems, although the success of bias mitigation techniques depends on the underlying calculations of the recommender system.
+There is **potential** for AIF360 as a bias mitigation tool in recommender systems, although the success of bias mitigation techniques depends on the **underlying calculations** of the recommender system.
 
 Because of the underrepresentation of female film directors in the dataset, reweighing adjusts the distribution of instances across different groups.
-- This may lead to a reduction in the sample size of the majority group to achieve parity, which loses data and can limit the model's ability to capture the full complexity of the dataset.
+- This may lead to a reduction in the sample size of the majority group to achieve parity, which **loses data** and can limit the model's ability to capture the full complexity of the dataset.
 
 Additionally, simply examining the director's gender in movie recommender systems is not enough to consider.
-- It is essential to consider how gender can intersect with other demographic factors.
+- It is essential to consider how gender can **intersect with other demographic factors**, like race for example.
 
 Lastly, while the bias mitigation techniques in this project were able to achieve a far model in terms of statistical fairness metrics, these techniques do not fully address the underlying systemic biases present in society.
-- **Technosolutionism**: the reliance on technological solutions to address complex social issues, ignoring broader societal, ethical, and political implications.
-- Bias mitigation alone cannot effectively address biases without the work of fields such as sociology, cultural, and media studies to work towards changing the dynamics that influence film production, distribution, and consumption.
+- **Technosolutionism**: the reliance on **technological solutions** to address complex social issues, ignoring broader societal, ethical, and political implications.
+- Bias mitigation alone cannot effectively address biases without the work of fields such as **sociology, cultural, and media studies** to work towards changing the dynamics that influence film production, distribution, and consumption.
 
 ## References
 
