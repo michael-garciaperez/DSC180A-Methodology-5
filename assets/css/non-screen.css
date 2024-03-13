@@ -1,79 +1,225 @@
-a#forkme_banner {
-  display: none;
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+
+body {
+  background-image: url('../images/curtains.jpeg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Public Sans', sans-serif;
+  color: white;
+  margin: 0;
 }
 
 div.shell {
-  width: 640px;
+  display: block;
+  width: 670px;
+  margin: 100px auto;
 }
 
 header {
   position: relative;
   z-index: 2;
-  max-width: 100%;
-  padding: 20px;
-  background-image: url('../images/clap_board.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center top;
+  margin: 100px auto; /* Adjusted margin */
+  max-width: 670px;
+  padding: 20px 40px 25px;
+  height: 500px;
 }
 
-header h1,
-header h2 {
-  padding: 0 20px;
-  margin-top: 140px; 
+header h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  line-height: 1;
+  background-color: black;
+  padding: 10px 20px;
+  margin-top: 150px;
+  max-width: 550px;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.clapboard-image {
+  background-image: url('../images/clap_board.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 670px; 
+  height: 500px;
+  position: absolute; 
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: -1;
 }
 
 .author-mentor-container {
   text-align: center;
-  padding: 0 20px;
+  margin-top: -10px;
+  margin-bottom: -15px;
 }
 
 .author-mentor-container p {
-  font-size: 0.8em;
-  margin: 20px 0; 
+  display: inline-block;
+  background-color: black;
+  padding: 5px; /* Increased padding */
+  margin: 2.5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2em; /* Increased font size */
+}
 
 .buttons {
+  text-align: center;
+  margin-top: 50px; /* Reduce the margin-top to bring the buttons closer to the names */
+  margin-bottom: -20px; /* Adjust the margin-bottom as needed */
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 15px 25px; /* Increased padding */
+  font-size: 1.2em; /* Increased font size */
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px; /* Increased border radius */
+}
+
+.buttons a:hover {
+  background-color: #333;
+}
+
+#main_content {
+  margin-top: -10px; /* Reduce the margin-top to bring the body content closer to the buttons */
+}
+
+#main_content ul {
+  /* background-color: black; */ /* Removed background color */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#main_content ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#main_content ul li a:hover {
+  text-decoration: underline;
+}
+
+.header-level-1 {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 40px;
+}
+
+.footer-text {
   text-align: center;
   margin-top: 20px;
 }
 
-header span.ribbon-inner {
-  border: 8px solid #800000;
-  padding: 6px;
+.footer-text p {
+  margin: 5px 0;
 }
 
-header h1 {
-  font-family: 'Public Sans', sans-serif;
-  font-size: 3em; 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
-body {
-  background-image: url('../images/curtains.jpeg');
-  background-size: cover; 
-  background-position: center; 
+.top-bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 0;
+  z-index: 1000;
 }
 
-@media only screen and (max-width: 640px) {
+.toc {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.toc li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.toc li a {
+  color: white;
+  text-decoration: none;
+}
+
+.toc li a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  color: gray;
+  text-decoration: none; /* Optional: Remove underline */
+}
+
+a:hover {
+  color: darkgray;
+}
+
+/* Mobile optimization */
+@media only screen and (max-width: 600px) {
   div.shell {
-    width: 100%;
+    width: 90%;
+    margin: 50px auto;
   }
-
+  
   header {
-    max-width: 100%;
-    top: 71px;
+    margin: 50px auto;
   }
-
-  header span.left-tail,
-  header span.right-tail {
-    display: none;
-  }
-
+  
   header h1 {
-    font-size: 1.5em;
+    margin-top: 100px;
+    max-width: 90%;
   }
-
-  .author-mentor-container p {
-    font-size: 0.5em;
-    margin: 1px 0 !important;
+  
+  .clapboard-image {
+    max-width: 90%;
+  }
+  
+  .buttons {
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }
+  
+  .buttons a {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+  
+  footer p {
+    margin-top: 20px;
   }
 }
