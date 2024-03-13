@@ -197,7 +197,7 @@ a:hover {
   }
   
   header {
-    margin: 200px auto 0; /* Adjusted margin-top to move the entire header down */
+    margin-top: 200px; /* Adjusted margin-top to move only the header down */
     max-width: 90%;
   }
   
