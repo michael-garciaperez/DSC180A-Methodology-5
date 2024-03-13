@@ -214,6 +214,11 @@ a:hover {
     text-align: center;
   }
   
+  .author-mentor-container h2 {
+    margin-top: 10px; /* Adjust margin-top to move "AUTHORS:" down */
+    font-size: 1.15em; /* Adjust font-size if needed */
+  }
+  
   .author-mentor-container p {
     margin: 5px 0;
   }
@@ -230,7 +235,7 @@ a:hover {
   }
   
   #main_content {
-    padding-top: 325px; /* Add padding to move the body text down */
+    padding-top: 325px; /* Add top padding to move the body text down */
   }
   
   footer p {
