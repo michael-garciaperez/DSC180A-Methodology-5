@@ -198,11 +198,11 @@ a:hover {
   
   header {
     margin: 50px auto 0;
+    max-width: 90%;
   }
   
   header h1 {
     margin-top: 100px;
-    max-width: 90%;
   }
   
   .clapboard-image {
@@ -210,34 +210,27 @@ a:hover {
   }
   
   .author-mentor-container {
-    margin-top: 20px; /* Adjusted margin */
-    width: 90%; /* Set specific width */
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; /* Center text */
+    margin-top: 20px;
+    text-align: center;
   }
   
   .author-mentor-container p {
-    width: 100%; /* Set width to full for inline-block elements */
-    margin: 5px 0; /* Adjust margin */
+    margin: 5px 0;
   }
   
   .buttons {
     margin-top: 30px;
-    margin-bottom: 0;
-    width: 90%; /* Set specific width */
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center; /* Center buttons */
   }
   
   .buttons a {
-    display: block; /* Display buttons as block elements */
-    margin-bottom: 10px; /* Adjust margin between buttons */
-    width: 100%; /* Set width to full */
+    display: block;
+    margin: 0 auto 10px; /* Center and add spacing between buttons */
+    width: 70%; /* Adjust button width */
   }
   
   #main_content {
-    padding: 0 20px; /* Added padding */
+    padding: 0 20px;
   }
   
   footer p {
