@@ -197,17 +197,18 @@ a:hover {
   }
   
   header {
-    margin-top: 50px; /* Adjusted margin-top for header */
+    margin-top: 50px;
     max-width: 90%;
   }
   
   header h1 {
     margin-top: 100px;
+    font-size: 2em;
   }
   
   .clapboard-image {
     max-width: 90%;
-    top: 50px; /* Adjusted top position for clapboard image */
+    top: 50px;
   }
   
   .author-mentor-container {
