@@ -102,11 +102,11 @@ Recommender Systems
 Recommender System using Jaccard Similarity
 - A Movie-User matrix is created based on user ratings. The recommendation algorithm relies on Jaccard Similarity between movies to generate personalized recommendations for a user.
 - Recommendations for User 1:
-    - graph
+    - ![Director Proportion of Jaccard Similarity Recommended Movies](https://raw.githubusercontent.com/michael-garciaperez/DSC180B-Capstone-Project/main/assets/images/1_jaccard.png)
     - The top 10 recommended movies for User 1 do not provide diverse suggestions.
     - All the recommended movies are entirely male-directed, introducing bias and overlooking potentially good recommendations directed by females.
 - Recommendations for User 2908:
-    - graph
+    - ![Director Proportion of Jaccard Similarity Recommended Movies](https://raw.githubusercontent.com/michael-garciaperez/DSC180B-Capstone-Project/main/assets/images/2908_jaccard.png)
     - User 2908's recommended movies did not have any female directors, every movie recommended was entirely male-directed.
     - Despite User 2908 having a more gender diverse rating history, the Jaccard recommender system performed the same as it did for User 1, who had low gender diversity in ratings.
 
@@ -116,10 +116,10 @@ Recommender System using Cosine Similarity
 - Cosine similarity evaluates the similarity between movies based on the cosine of the angle between their respective feature vectors, representing user ratings.
 - The higher the cosine similarity value, the more alike two movies are considered to be in terms of user ratings.
 - Recommendations for User 1:
-    - graph
+    - ![Director Proportion of Cosine Similarity Recommended Movies](https://raw.githubusercontent.com/michael-garciaperez/DSC180B-Capstone-Project/main/assets/images/1_cosine.png)
     - For User 1, the Cosine Similarity recommender system exhibited the same behavior as the Jaccard Similarity recommender system. Each of the top 10 movie recommendations are fully directed by males.
 - Recommendations for User 2908:
-    - graph
+    - ![Director Proportion of Cosine Similarity Recommended Movies](https://raw.githubusercontent.com/michael-garciaperez/DSC180B-Capstone-Project/main/assets/images/2908_cosine.png)
     - User 2908's recommended movies using Cosine Similarity were more diverse than their recommended movies using Jaccard Similarity, but still had a lot less movies featuring female directors than their rating history.
 
 Recommender System using Pearson Correlation
@@ -128,11 +128,11 @@ Recommender System using Pearson Correlation
 - It identifies the common users who have rated both movies, then computes the correlation coefficient based on their ratings.
     - If there are no common users, the correlation is considered to be zero.
 - Recommendations for User 1:
-    - graph
+    - ![Director Proportion of Pearson Correlation Recommended Movies](https://raw.githubusercontent.com/michael-garciaperez/DSC180B-Capstone-Project/main/assets/images/1_pearson.png)
     - Recommendations for User 1 exhibited an increase in diversity concerning the gender of movie directors (compared to the Jaccard and Cosine similarity models).
     - 20% of User 1's recommended movies featured a female director, a notable increase compared to the ~5% average observed within User 1's watch history.
 - Recommendations for User 2908:
-    - graph
+    - ![Director Proportion of Pearson Correlation Recommended Movies](https://raw.githubusercontent.com/michael-garciaperez/DSC180B-Capstone-Project/main/assets/images/2908_pearson.png)
     - User 2908's recommended movies using Pearson Correlation performed the same as Jaccard Similarity, with no movies featuring female directors.
 - For User 1, the recommender system using Pearson Correlation yielded the greatest percentage of female directed movies (20%), whereas it was Cosine Similarity (10%) for User 2908. -    - User 1 received more diverse recommendations using Pearson, even though they rated less female directed movies than User 2908.
 
@@ -163,9 +163,9 @@ Recommender System using Singular Value Decomposition
 - To convert the predictions to recommendations, we recommend the user movies that they are predicted to give 5 stars.
     - Both User 1 & User 2908 received all entirely-male directed movies as recommendations, despite having a stark contrast in the diversity of their rating history.
     - User 1:
-        - graph
+        - ![Percentage of Recommended Movies from SVD for User 1](https://raw.githubusercontent.com/michael-garciaperez/DSC180B-Capstone-Project/main/assets/images/1_svd.png)
     - User 2908:
-        - graph
+        - ![Percentage of Recommended Movies from SVD for User 2908](https://raw.githubusercontent.com/michael-garciaperez/DSC180B-Capstone-Project/main/assets/images/2908_svd.png)
 
 ## Bias Mitigation
 
