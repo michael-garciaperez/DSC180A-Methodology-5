@@ -217,8 +217,8 @@ a:hover {
   }
   
   .author-mentor-container h2 {
-    margin-top: 10px; /* Adjust margin-top to move "AUTHORS:" down */
-    font-size: 1.15em; /* Adjust font-size if needed */
+    margin-top: 20px; /* Adjust margin-top to move "AUTHORS:" down */
+    font-size: 1em; /* Adjust font-size if needed */
   }
   
   .author-mentor-container p {
