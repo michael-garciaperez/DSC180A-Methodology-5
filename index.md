@@ -55,13 +55,13 @@ Note that there **is** a strong **class imbalance** within the dataset, where **
 
 Utilizing AIF360 to assess for bias, we measure the **Disparate Impact** and **Statistical Parity Difference** of our dataset.
 
-- Disparate Impact Before Mitigation: ~0.694
+- Disparate Impact Before Mitigation: 0.6936795435950334
   - The **3/4ths rule** is a standard threshold used for disparate impact analysis. If the favorable outcome rate for a group is < 75% (a.k.a. 3/4), bias is present in the dataset.
-  - The Disparate Impact value of ~0.69 maps to a percentage of ~69%, which is < than 75%. There is a **bias in how 5-star ratings** are distributed between the different genders of the directors.
+  - Our Disparate Impact value of ~0.69 maps to a percentage of ~69%, which is < than 75%. There is a **bias in how 5-star ratings** are distributed between the different genders of the directors.
   - Movies with **female directors** are getting 5-star ratings about **69% as often** as **fully male-directed** movies.
   - Fully male-directed movies, as the **privileged group**, are **more likely** to achieve the **favorable outcome** compared to movies with female directors.
 
-- Statistical Parity Difference Before Mitigation: approx. -0.068
+- Statistical Parity Difference Before Mitigation: -0.06810877956209874
    - A Statistical Parity Difference **close to 0** shows **no difference** in the proportion of **favorable outcomes** between different groups.
    - Our value is close to 0 and does **not show a discernible bias**.
 
@@ -77,12 +77,12 @@ Random Forest (Classification Algorithm):
   - Full details on model development (e.g., training/testing data, hyperparameter tuning) can be found in the report.
 
 Bias Metrics Before Mitigation:
-- Disparate Impact: ~0.668
+- Disparate Impact: 0.66751005405058
      - The Disparate Impact suggests that the unprivileged group is at a disadvantage compared to the privileged group, as they are less likely to receive favorable outcomes.
-- Statistical Parity Difference: approx. -0.0743
+- Statistical Parity Difference: -0.07432062114365237
       - The Statistical Parity Difference is not a strong indicator of bias due to this value being close to 0.
 
-Accuracy Before Mitigation: ~0.787
+Accuracy Before Mitigation: 0.7866022619775142
 - Refer to the report for full breakdown on utility measures including precision, recall, and f1-score.
 - Refer to the report for figures on the ROC-AUC Curve, Precision-Recall Curve, and Feature Importances Bar Plot.
 
@@ -151,14 +151,14 @@ Recommender System using Singular Value Decomposition
         - MAE gives the average absolute error, making it easier to understand/interpret in real-world terms.
             - For example, if the MAE is 5, it means, on average, that the model's predictions are off by 5 units from the actual values.
 - Bias metrics:
-    - Disparate Impact Before Mitigation: ~0.38
-        - This metric indicates a significant disparity in favorable outcomes between movies directed by males and those directed by females, with a value of ~0.38 suggesting unequal representation in the recommended items.
-    - Statistical Parity Difference Before Mitigation: approx. -0.052
-        - The negative value of approx. -0.052 does not significantly indicate a bias favoring movies directed by females in receiving favorable outcomes.
+    - Disparate Impact Before Mitigation: 0.37183522589516477
+        - This metric indicates a significant disparity in favorable outcomes between movies directed by males and those directed by females, suggesting unequal representation in the recommended items.
+    - Statistical Parity Difference Before Mitigation: -0.054886528334157865
+        - This value does not significantly indicate a bias favoring movies directed by females in receiving favorable outcomes.
 - Utility:
-    - RMSE (Root Mean Squared Error) Before Mitigation: ~0.71
+    - RMSE (Root Mean Squared Error) Before Mitigation: 0.7112598105209462
         - The RMSE value signifies the average discrepancy between predicted and actual ratings, reflecting the prediction accuracy of the model in prioritizing entirely-male directed content.
-    - MAE (Mean Absolute Error) Before Mitigation: ~0.56
+    - MAE (Mean Absolute Error) Before Mitigation: 0.558379767367252
         - The model's average deviation from actual ratings is approximately 0.56 units, allowing insight into prediction accuracy without considering the direction of errors.
 - To convert the predictions to recommendations, we recommend the user movies that they are predicted to give 5 stars.
     - Both User 1 & User 2908 received all entirely-male directed movies as recommendations, despite having a stark contrast in the diversity of their rating history.
@@ -180,7 +180,7 @@ Random Forest Pre-Processing Bias Mitigation
 - A Random Forest Classifier is **trained on the reweighed dataset**.
 - This approach aims to address bias in the original model's predictions by reweighing instances based on the protected attribute 'all_male_director' before training the model.
 - Bias Metrics After Mitigation:
-    - Disparate Impact: ~1.0
+    - Disparate Impact: 1.0000000000000004
     - Statistical Parity Difference: ~0.0
     - The bias metrics **improved significantly**, with the Disparate Impact being approximately 1 and the Statistical Parity Difference close to zero, **indicating a fair model**.
 - After retraining on the reweighed data, the Random Forest Classifier with 100 estimators achieved an **accuracy of ~0.79**, which **did not increase or decrease** compared to the original accuracy of  ~0.79.
