@@ -210,7 +210,9 @@ Like the other similarity metrics above, **SVD** relies on user-item interaction
     - There appears to be a **trade-off between model utility and fairness**, as the **predictive capabilities worsened** and will not perform as well.
 
 - To convert the predictions to recommendations, we recommend the user movies that they are predicted to give 5 stars.
+- User 1:
     - ![Percentage of Recommended Movies from SVD for User 1](https://raw.githubusercontent.com/michael-garciaperez/DSC180B-Capstone-Project/main/assets/images/1_svd_after.png)
+ - User 2908:
     - ![Percentage of Recommended Movies from SVD for User 1](https://raw.githubusercontent.com/michael-garciaperez/DSC180B-Capstone-Project/main/assets/images/2908_svd.png)
 
 - Both users received mostly entirely male-directed movies as recommendations, despite having a stark contrast in the diversity of their rating history. Ultimately, we realized that since SVD tries to predict ratings based on how other users have rated the movie, the bias present in other users' recommendations can heavily influence the predicted ratings and, thus, the recommendations from the SVD algorithm, despite our reweighing efforts with AIF360.
