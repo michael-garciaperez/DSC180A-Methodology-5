@@ -151,14 +151,14 @@ Recommender System using Singular Value Decomposition
         - MAE gives the average absolute error, making it easier to understand/interpret in real-world terms.
             - For example, if the MAE is 5, it means, on average, that the model's predictions are off by 5 units from the actual values.
 - Bias metrics:
-    - Disparate Impact Before Mitigation: 0.37183522589516477
+    - Disparate Impact Before Mitigation: 0.3693759561648962
         - This metric indicates a significant disparity in favorable outcomes between movies directed by males and those directed by females, suggesting unequal representation in the recommended items.
-    - Statistical Parity Difference Before Mitigation: -0.054886528334157865
+    - Statistical Parity Difference Before Mitigation: -0.05460790391117668
         - This value does not significantly indicate a bias favoring movies directed by females in receiving favorable outcomes.
 - Utility:
-    - RMSE (Root Mean Squared Error) Before Mitigation: 0.7112598105209462
+    - RMSE (Root Mean Squared Error) Before Mitigation: 0.7146405963914735
         - The RMSE value signifies the average discrepancy between predicted and actual ratings, reflecting the prediction accuracy of the model in prioritizing entirely-male directed content.
-    - MAE (Mean Absolute Error) Before Mitigation: 0.558379767367252
+    - MAE (Mean Absolute Error) Before Mitigation: 0.5604532156766929
         - The model's average deviation from actual ratings is approximately 0.56 units, allowing insight into prediction accuracy without considering the direction of errors.
 - To convert the predictions to recommendations, we recommend the user movies that they are predicted to give 5 stars.
     - Both User 1 & User 2908 received all entirely-male directed movies as recommendations, despite having a stark contrast in the diversity of their rating history.
@@ -196,15 +196,15 @@ We develop the models again using the same similarity metrics (Jaccard, Cosine, 
 Like the other similarity metrics above, **SVD** relies on user-item interaction data to make recommendations.
 - By using a reweighted dataset to adjust the representation of male-directed and female-directed movies, we investigate whether there is a difference in recommended movies before and after mitigation.
 - Bias Metrics:
-    - Disparate Impact After Mitigation: ~0.6295
+    - Disparate Impact After Mitigation: 0.7733126316795207
         - The Disparate Impact After Mitigation showed a more fair result.
-        - The Disparate Impact Before Mitigation was ~0.38, increasing to ~0.63 after. This value **approached 1** and indicates a **more fair model**.
+        - The Disparate Impact Before Mitigation was ~0.38, increasing to 0.7733126316795207 after. This value **approached 1** and indicates a **more fair model**.
     - Statistical Parity Difference After Mitigation: approx. -0.004
         - The Statistical Parity Difference was low to begin with (i.e., close to 0) and did **not indicate bias** in that metric itself.
 - Utility:
-    - RMSE After Mitigation: ~1.2134
+    - RMSE After Mitigation: 1.2127078190341418
         - RMSE increased from ~0.71 to ~1.21.
-    - MAE After Mitigation: ~0.989
+    - MAE After Mitigation: 0.9880414966128905
         - MAE increased from ~0.56 to ~0.989.
     - Model utility **worsened after Reweighing** was applied.
     - There appears to be a **trade-off between model utility and fairness**, as the **predictive capabilities worsened** and will not perform as well.
